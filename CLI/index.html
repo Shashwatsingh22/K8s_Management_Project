@@ -12,13 +12,13 @@
         <h1>Kub-CLI</h1>
     </div>
 
-    <div class="screen">
-            <label for="command">PS F:\></label>
-            <input id="command" type="text" name="command" autocomplete="off">
+    <div id="screen">
+            <label for="command">$</label>
+            <input class="command" type="text" name="command" autocomplete="off">
     </div>
 
     <script>
-        const command = document.querySelector('#command');
+        const command = document.querySelector('.command');
         const commandValue = command.value;
         command.addEventListener('keypress', setQuery);
 
@@ -27,8 +27,23 @@
             {
                 if(commandValue == "")
                 {
-                    
-                      }
+                    var label = document.createElement("label");
+                    var node = document.createTextNode("$");
+                    label.appendChild(node);
+
+                    var input = document.createElement('input');
+                    var cmd = document.createAttribute('class');
+                    cmd.value = "command";
+                    input.setAttributeNode(cmd);
+
+                    var element = document.getElementById('screen');
+                    element.appendChild(input);
+                    element.appendChild(label)
+
+                }
+                else{
+                    console.log(command.value);
+                }
             }
         }
     </script>
