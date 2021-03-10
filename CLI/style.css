@@ -50,7 +50,7 @@ h1::before
 }
 
 /* SCREEN STYLING */
-.screen{
+#screen{
     position: fixed;
     color: white;
     font-size: 3vh;
@@ -59,17 +59,17 @@ h1::before
     position: absolute;
     top: 20%;
     padding: 1%;
-    width: 150vh;
+    width: 80%;
     min-height: 75vh;
     border-radius: 20px;
 }
-.screen input{
+#screen input{
     width: 90%;
     font-size: 3vh;
     background-color: #000000;
     border: none;
     color: #ffffff;
 }
-.screen input:focus{
+#screen input:focus{
     outline: none;
 }
