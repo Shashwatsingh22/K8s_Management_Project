@@ -24,7 +24,7 @@
         function setQuery(key){
             if(key.keyCode == 13)
             {
-                const commandValue = command.value;
+                var commandValue = command.value;
                 if(commandValue == "")
                 {
                     var label = document.createElement("label");
@@ -45,6 +45,7 @@
                     var len = document.getElementsByClassName('command').length;
                     console.log(len);
                     command = document.getElementsByClassName('command')[len-1];
+
 
                 }
                 else{
