@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kubernetes CLI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Kub-CLI</h1>
+    </div>
+
+    <div id="screen">
+            <label for="command">$</label>
+            <input class="command" type="text" name="command" autocomplete="off">
+    </div>
+
+    <script>
+        var command = document.querySelector('.command');
+        command.addEventListener('keypress', setQuery);
+
+        function setQuery(key){
+            if(key.keyCode == 13)
+            {
+                const commandValue = command.value;
+                if(commandValue == "")
+                {
+                    var label = document.createElement("label");
+                    var node = document.createTextNode("$");
+                    label.appendChild(node);
+
+                    var inp = document.createElement('input');
+                    var cmd = document.createAttribute('class');
+                    cmd.value = "command";
+                    inp.setAttributeNode(cmd);
+
+                    var element = document.getElementById('screen');
+                    var br = document.createElement('br');
+                    element.appendChild(br);
+                    element.appendChild(label);
+                    element.appendChild(inp)
+
+                    var len = document.getElementsByClassName('command').length;
+                    console.log(len);
+                    command = document.getElementsByClassName('command')[len-1];
+
+                }
+                else{
+                    console.log(command.value);
+                }
+            }
+        }
+    </script>
+    <!-- <script src="index.js"></script> -->
+</body>
+</html>
