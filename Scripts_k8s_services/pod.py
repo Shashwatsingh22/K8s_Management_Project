@@ -18,5 +18,5 @@ def pod_services(subser,mydata):
         print(subprocess.getoutput("sudo kubectl delete pod "+tag))
 
     elif subser == "labelValue":
-        label =mydata.getvalue("tag")
+        label =mydata.getvalue("label")
         print(subprocess.getoutput("sudo kubectl get pods -L "+label))      
