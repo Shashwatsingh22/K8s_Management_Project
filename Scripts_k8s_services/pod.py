@@ -1,7 +1,7 @@
 import subprocess
 
 def pod_services(subser,mydata):
-    if subser == "lunch":
+    if subser == "launch":
         tag = mydata.getvalue("tag")
         image_name = mydata.getvalue("image_name")
         print(subprocess.getoutput("sudo kubectl run "+tag+" --image="+image_name))
