@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 import cgi
 import pod
 import deploy
@@ -16,14 +17,14 @@ subser= mydata.getvalue("subser")
 if service == "pod":
     pod.pod_services(subser,mydata)
 
-#-------------- Deployment ------------
+#---------- Deployement Service ------
 elif service == "deployment":
-    deploy.deploy_services(subser,mydata)
+    deploy.deploy_service(subser,mydata)
 
-#--------- Service ----------
+#------- svc services ------
 elif service == "svc":
     svc.svc_services(subser,mydata)
 
-#------ Secret ----------
+#---- Secret -----
 elif service == "secret":
     secret.secret_svc(mydata)
