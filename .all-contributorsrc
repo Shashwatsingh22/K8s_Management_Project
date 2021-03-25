@@ -1,0 +1,61 @@
+{
+    "projectName": "K8s_Management_Project",
+    "projectOwner": "Shashwatsingh22",
+
+  "files": ["README.md"],
+  "imageSize": 100,
+  "contributorsPerLine": [
+      {
+        "login": "Shashwatsingh22",
+        "name": "Shashwat Singh",
+        "avatar_url": "https://avatars.githubusercontent.com/u/55051478?s=400&u=bd48a10180ed2d8ff8ad4368ae875ae841d13569&v=4",
+        "profile": "https://github.com/Shashwatsingh22",
+        "contributions": [
+            "flutter",
+            "dart",
+            "talk",
+            "review"
+        ]
+      },
+
+    {
+        "login": "adityasinghpratham",
+        "name": "Aditya Singh Pratham",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63394722?s=400&v=4",
+        "profile": "https://github.com/adityasinghpratham",
+        "contributions": [
+            "website",
+            "doc"
+        ]
+    },
+
+    {
+        "login": "NeerajSaini12560",
+        "name": "Neeraj Saini",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63442908?s=400&u=61ba9757b66762f6890854578903ce82e297153c&v=4",
+        "profile": "https://github.com/NeerajSaini12560",
+        "contributions": [
+            "doc",
+            "talk"
+        ]
+    },
+    {
+        "login": "vishnupsingh523",
+        "name": "Vishwanath Pratap Singh",
+        "avatar_url": "https://avatars.githubusercontent.com/u/49968961?s=460&u=c4929fe9fbf7c08bc4be98b09c50f226a949f9b4&v=4",
+        "profile": "https://github.com/vishnupsingh523",
+        "contributions": [
+            "CLI",
+            "doc",
+            "talk",
+            "review"
+        ]
+    },
+  ],
+  
+  "repoType": "github",
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "commitConvention": "angular",
+  "skipCi" true
+}
