@@ -23,7 +23,7 @@ class _LaunchPodState extends State<LaunchPod> {
 
    void execute(var svc,var subsvc,var tag,var imageName) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&image_name=$imageName";
+  var url="http://master_ip/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&image_name=$imageName";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
