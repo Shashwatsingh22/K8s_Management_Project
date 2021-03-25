@@ -25,7 +25,7 @@ class _ExposeState extends State<Expose> {
 
 void execute(var svc,var subsvc,var tag,var port,var type) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&app_port=$port&typeP=$type";
+  var url="http://master_ip/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&app_port=$port&typeP=$type";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
