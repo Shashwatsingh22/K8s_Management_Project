@@ -25,7 +25,7 @@ class _SecretState extends State<Secret> {
 
 void execute(var svc,var tag,var key,var value) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&tag=$tag&key=$key&value=$value";
+  var url="http://master_ip/cgi-bin/main.py?service=$svc&tag=$tag&key=$key&value=$value";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
