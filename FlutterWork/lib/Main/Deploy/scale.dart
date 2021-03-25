@@ -21,7 +21,7 @@ class _ScaleInOutState extends State<ScaleInOut> {
 
 void execute(var svc,var subsvc,var tag,var num) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&num=$num";
+  var url="http://Master_Ip/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&num=$num";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
