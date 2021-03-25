@@ -19,7 +19,7 @@ class _GetLabelPod extends State<GetLabelPod> {
 
 void execute(var svc,var subsvc,var tag) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&label=$tag";
+  var url="http://master_ip/cgi-bin/main.py?service=$svc&subser=$subsvc&label=$tag";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
