@@ -16,7 +16,7 @@ class _PodMainState extends State<PodMain> {
 
 void execute(var svc,var subsvc) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc";
+  var url="http://master_ip/cgi-bin/main.py?service=$svc&subser=$subsvc";
   var response = await http.get(url);
   webdata = response.body;
    MyNavigator.goToShell(context);
