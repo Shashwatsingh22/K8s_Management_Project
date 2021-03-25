@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
+  <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Montserrat/Montserrat-Medium.ttf">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <body>
+    <div class="container-fluid" style="height: 1000px">
+      <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
+        <a class="navbar-brand" style="padding-right: 20px;" href="">Master Cluster</a>
+        <div class="dropdown">
+          <button type = "button" onclick="myFunction()"class = "dropbtn btn btn-default dropdown-toggle button1" data-toggle = "dropdown">Services<span class = "caret"></span></button>
+        <div class="dropdown-content">
+          <div class="header">
+            <h1 style="padding-left:23px; padding-top: 20px; background-color: #28527a;">All Services</h1>
+          </div>
+          <div class="row">
+            <div class="column">
+              <!-- <h2><strong>Automation</strong></h2> -->
+              <h4><b>Configuration</b></h4>
+              <a href="Configuration.html">Configure with same</a>
+              <a href="Configuration.html">Configure with multi</a>
+            </div>
+            <div class="column">
+              <h4><b>POD</b></h4>
+              <a href="Status.html">Get_All</a>
+              <a href="">Delete</a>
+              <a href="">Launch</a>
+              <a href="">Describe</a>
+              <a href="">Label</a>
+              <div id="main">
+                <ul style="margin:0; padding-left: 0px; padding-top:5px;">
+                  <li><a href=""></a>
+                    <ul>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="column">
+              <h4><b>Deployment</b></h4>
+              <a href="">Expose</a>
+              <a href="">Delete</a>
+              <a href="">Launch</a>
+              <a href="">Describe</a>
+              <div id="main">
+                <ul style="margin:0; padding-left: 0px; padding-top:5px;">
+                  <li><a href=""></a>
+                    <ul>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <div class="column">
+              <h4><b>Secret</b></h4>
+              <a href="">Blank</a>
+              <a href="">Describe</a>
+              <div id="main">
+                <ul style="margin:0; padding-left: 0px; padding-top:5px;">
+                  <li><a href="">Status <i class="fas fa-caret-right"></i></a>
+                    <ul>
+                      <li><a href="">By label</a></li>
+                      <li><a href="">By default</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div> -->
+            <div class="column">
+              <h4><b>Service</b></h4>
+              <a href="">Get_All</a>
+              <a href="">Exp_Dep</a>
+              <a href="">Expose Pod</a>
+              <a href="">Expose RC</a>
+              <a href="">Expose Deployment</a>
+              <div id="main">
+                <ul style="margin:0; padding-left: 0px; padding-bottom: 50px;padding-top:5px;">
+                  <li><a href=""></a>
+                    <ul>
+                      <li><a href=""></a></li>
+                      <li><a href=""></a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="">
+              <a class="back" href="index.html">
+                <button class="" style="margin-left: 530px;   background-color: #28527a; color:white; border: 1px solid white;  width: 34px;  height: 30px; margin-top: 40px;"><b><i class="fas fa-home"></i></b></button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">UserName</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="">AboutUs</a>
+            </li>
+        </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+    <div class="" style="; padding:20px; padding-top: 100px;">
+      <a class="a" href="#">
+        <button class="one" style=" border: 0px solid;">Get_All</button>
+      </a>
+      <a class="b" href="PODDelete.html">
+        <button class="one" style="border: 0px solid;">Delete</button>
+      </a>
+    </div>
+    <div class="" style="padding:20px; padding-top: 50px;">
+      <a class="c" href="PODDescribe.html">
+        <button class="one" style="border: 0px solid;">Describe</button>
+      </a>
+      <a class="d" href="PODlaunch.html">
+        <button class="one" style="border: 0px solid;">Launch</button>
+      </a>
+
+    </div>
+    <div class="" style="padding:20px; padding-top: 50px;">
+      <a class="e" href="PODLabel.html">
+        <button class="one" style="border: 0px solid;">Label Value</button>
+      </a>
+    </div>
+    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
+                display: block;  width: 650px; height: 450px;  top: 100px; left: 580px; position: fixed;
+                padding-left: 10px; margin:auto;">
+    ------------------Whatever content inside-----------------------------
+    </div>
+    </div>
+  </body>
+</html>
