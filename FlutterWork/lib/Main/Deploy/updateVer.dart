@@ -24,7 +24,7 @@ class _UpdateVerState extends State<UpdateVer> {
 
 void execute(var svc,var subsvc,var tag,var old,var newI) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&current_container_name=$old&updated_image=$newI";
+  var url="http://Master_IP/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&current_container_name=$old&updated_image=$newI";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
