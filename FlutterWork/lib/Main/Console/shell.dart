@@ -21,7 +21,7 @@ int op=0;
 class _ShellState extends State<Shell> {
 execute(var cmd) async
 {
-  var url="http://13.232.160.12/cgi-bin/cmd.py?cmd=$cmd";
+  var url="http://Master_IP/cgi-bin/cmd.py?cmd=$cmd";
   var response = await http.get(url);
    setState(() {
         //output.add(response.body);
