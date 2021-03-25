@@ -21,7 +21,7 @@ class _DeletePodState extends State<DeletePod> {
    
 void execute(var svc,var subsvc,var tag) async
 {
-  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag";
+  var url="http://Master_IP/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
