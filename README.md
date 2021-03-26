@@ -40,7 +40,7 @@ An app manager project, which helps users to managae the backend part of their a
                
  2.Cluster on Multi Cloud Plateform:
                    
-    In today’s industry , everyone needs all the architecture in multimode. As one slave is running on 
+    In today’s industry , everyone needs all the architecture in multicloud Cluster. As one slave is running on 
     their local datacenter , another on AWS or Google clouds  and all are running on some other clouds .
      This is Multiclouds Architecture.
                          
