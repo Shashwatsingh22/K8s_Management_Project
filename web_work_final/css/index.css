@@ -1,0 +1,31 @@
+/* *************************************
+Main Screen styling below Navigation bar 
+****************************************/
+.screen{
+    height: 400px;
+    width: 100%;
+    margin-top: 85px;
+    background-color: #1a4141;
+    text-align: center;
+}
+.screen .img1{
+    opacity: .7;
+    height: 390px; 
+    /* padding-top: 80px; */
+    filter: blur(2px);    
+}
+
+.inner{
+    position: relative;
+    bottom: 200px;
+    color: black;
+}
+
+/* FEATURES : below kube image */
+#features {
+    padding:7% 15%;
+    /* background-color: #fff; */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}

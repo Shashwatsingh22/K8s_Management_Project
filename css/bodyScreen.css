@@ -1,0 +1,28 @@
+/************
+* SETTING THE SCREEN BELOW navigation bar
+***************/
+.body-screen{
+    position: relative;
+    padding-top: 120px;
+    text-align: center;
+    background-color: black;
+}
+.body-screen img{
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+}
+.body-screen .screen-content{
+    position: relative;
+    bottom: 180px;
+    backdrop-filter: blur(20px);
+}
+.body-screen .screen-content h2{
+    font-size: 40px;
+    color: rgb(255, 233, 191);
+}
+.body-screen .screen-content h3{
+    font-size: 25px;
+    color: rgba(240, 255, 255, 0.897);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

@@ -16,17 +16,26 @@ nav .wrapper{
   line-height: 70px;
   justify-content: space-between;
 }
-.wrapper .logo {
+.wrapper .logo h2{
   color: #f2f2f2;
   font-size: 30px;
   font-weight: 600;
-  
 }
+.wrapper .logo h4{
+  position: relative;
+  bottom: 48px;
+  background: -webkit-linear-gradient(rgb(255, 70, 70), rgb(221, 86, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Setting the MENU-BAR */
 .wrapper .menubar{
   display: inline-flex;
 }
 .menubar li{
   list-style: none;
+  margin: 0px 10px;
 }
 .menubar li a{
   color: #f2f2f2;
@@ -37,8 +46,10 @@ nav .wrapper{
   
 }
 .menubar li a:hover{
-  background: #4f92d4;
+  color: #80bfff;
 }
+
+/* SETTING THE DROPDOWN MENU */
 .menubar .drop-menu{
   position: absolute;
   background: #242526;
@@ -54,6 +65,7 @@ nav .wrapper{
   opacity: 1;
   visibility: visible;
 }
+
 .drop-menu li a{
   width: 100%;
   display: block;
@@ -89,7 +101,12 @@ nav .wrapper{
 .content .row header{
   color: #f2f2f2;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+  /* text-decoration: underline; */
+  /* border-bottom: 1px solid wheat; */
+  /* border-bottom: 2px dashed wheat; */
 }
 .content .row .mega-links{
   margin-left: -40px;
@@ -110,3 +127,22 @@ nav .wrapper{
 }
 
 
+/* Media query for width = max-800px */
+@media screen and (max-width:800px)
+{
+  .menubar li{
+    list-style: none;
+    margin: 0px;
+  }
+}
+
+
+/* Media query for width = max-700px 
+we have to set this because here there is some problem in alignment*/
+/* @media screen and (max-width:800px)
+{
+  .menubar li{
+    list-style: none;
+    margin: 0px;
+  }
+} */
