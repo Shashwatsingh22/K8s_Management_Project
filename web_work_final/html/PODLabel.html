@@ -2,138 +2,77 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title></title><link rel="stylesheet" href="cssfiles/main.css">
   </head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="magicscroll/magicscroll.css"/>
-    <script type="text/javascript" src="magicscroll/magicscroll.js"></script>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Montserrat/Montserrat-Medium.ttf">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+   
   <body>
-    <div class="container-fluid" style="height: 550px;">
-      <nav class="navbar navbar-expand-lg navbar-custom navbar-dark">
-        <a class="navbar-brand" style="padding-right: 20px;" href="">Master Cluster</a>
-        <div class="dropdown">
-          <button type = "button" onclick="myFunction()"class = "dropbtn btn btn-default dropdown-toggle button1" data-toggle = "dropdown">Services<span class = "caret"></span></button>
-        <div class="dropdown-content">
-          <div class="header">
-            <h1 style="padding-left:23px; padding-top: 20px; background-color: #28527a;">All Services</h1>
-          </div>
-          <div class="row">
-            <div class="column">
-              <!-- <h2><strong>Automation</strong></h2> -->
-              <h4><b>Configuration</b></h4>
-              <a href="Configuration.html">Configure with same</a>
-              <a href="Configuration.html">Configure with multi</a>
-            </div>
-            <div class="column">
-              <h4><b>POD</b></h4>
-              <a href="Status.html">Get_All</a>
-              <a href="PODDelete.html">Delete</a>
-              <a href="PODlaunch.html">Launch</a>
-              <a href="PODDescribe.html">Describe</a>
-              <a href="PODLabel.html">Label</a>
-              <div id="main">
-                <ul style="margin:0; padding-left: 0px; padding-top:5px;">
-                  <li><a href=""></a>
-                    <ul>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="column">
-              <h4><b>Deployment</b></h4>
-              <a href="DEPLOYCreate.html">Create</a>
-              <a href="DEPLOYDelete.html">Delete</a>
-              <a href="DEPLOYDescribe.html">Describe</a>
-              <a href="">Scale_in</a>
-              <a href="DEPLOYScale.html">Scale_out</a>
-              <a href="DEPLOYUpdate.html">Update_image</a>
-              <div id="main">
-                <ul style="margin:0; padding-left: 0px; padding-top:5px;">
-                  <li><a href=""></a>
-                    <ul>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <!-- <div class="column">
-              <h4><b>Secret</b></h4>
-              <a href="">Blank</a>
-              <a href="">Describe</a>
-              <div id="main">
-                <ul style="margin:0; padding-left: 0px; padding-top:5px;">
-                  <li><a href="">Status <i class="fas fa-caret-right"></i></a>
-                    <ul>
-                      <li><a href="">By label</a></li>
-                      <li><a href="">By default</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div> -->
-            <div class="column">
-              <h4><b>Service</b></h4>
-              <a href="">Get_All</a>
-              <a href="SvcDeploy.html">Exp_Dep</a>
-              <a href="SvcPod.html">Expose Pod</a>
-              <a href="SvcRc.html">Expose RC</a>
-              <a href="SvcDes.html">Des_svc</a>
-              <div id="main">
-                <ul style="margin:0; padding-left: 0px; padding-bottom: 50px;padding-top:5px;">
-                  <li><a href=""></a>
-                    <ul>
-                      <li><a href=""></a></li>
-                      <li><a href=""></a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="">
-              <a class="back" href="Status.html">
-                <button class="" style="margin-left: 530px;   background-color: #28527a; color:white; border: 1px solid white;  width: 34px;  height: 30px; margin-top: 40px;"><b><i class="fas fa-arrow-left"></i></b></button>
-              </a>
-            </div>
-          </div>
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <h2>Master Cluster</h2>
+          <h4>Complete Cluster Solutions</h4>
         </div>
-      </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">UserName</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="">AboutUs</a>
-            </li>
+        <ul class="menubar">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item">Services</a>
+            <div class="mega-box">
+              <div class="content">
+                <!-- Logo image box -->
+                <!-- <div class="row">
+                  <img src="1.jfif" alt="">
+                </div> -->
+  
+                <div class="row">
+                  <header>Configuration</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Configure with Same</a></li>
+                    <li><a href="#">Configure with Multi</a></li>
+                  </ul>
+                </div>
+  
+                <div class="row">
+                  <header>Pod</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Get All</a></li>
+                    <li><a href="#">Delete</a></li>
+                    <li><a href="#">Launch</a></li>
+                    <li><a href="#">Describe</a></li>
+                    <li><a href="#">Label</a></li>
+                  </ul>
+                </div>
+  
+                <div class="row">
+                  <header>Deployment</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Delete</a></li>
+                    <li><a href="#">Describe</a></li>
+                    <li><a href="#">Scale In</a></li>
+                    <li><a href="#">Scale Out</a></li>
+                    <li><a href="#">Update Image</a></li>
+                  </ul>
+                </div>
+  
+                <div class="row">
+                  <header>Service</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Get All</a></li>
+                    <li><a href="#">Exp Dep</a></li>
+                    <li><a href="#">Expose Pod</a></li>
+                    <li><a href="#">Expose Rc</a></li>
+                    <li><a href="#">Describe Service</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Username</a></li>
         </ul>
-        </div>
+      </div>
     </nav>
     <div class="" style="padding-top: 130px; padding-left: 30px">
       <h1>Label</h1>
