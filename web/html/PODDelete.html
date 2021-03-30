@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/PodDelete.css">
   </head>
   
   <body>
@@ -19,11 +20,7 @@
             <a href="#" class="desktop-item">Services</a>
             <div class="mega-box">
               <div class="content">
-                <!-- Logo image box -->
-                <!-- <div class="row">
-                  <img src="1.jfif" alt="">
-                </div> -->
-  
+
                 <div class="row">
                   <header>Configuration</header>
                   <ul class="mega-links">
@@ -75,18 +72,23 @@
         </ul>
       </div>
     </nav>
-    <div class="" style="padding-top: 130px; padding-left: 30px">
+
+
+    <div class="main">
       <h1>Delete</h1>
       <form action="/action_page.php">
-        <input type="text" placeholder="Enter Tag Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <input type="submit" value="Submit" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
+        <input type="text" placeholder="Enter Tag Name....">
+        <br><br>
+
+        <button type="submit">Submit</button>
       </form>
     </div>
-    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
-                padding-left: 10px;margin:auto;">
+
+    <div id="divOperationMessage">
     ------------------Whatever content inside-----------------------------
     </div>
     </div>
+
+    <!-- "http://master_ip/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&image_name=$imageName" --> POD Launch -->
   </body>
 </html>
