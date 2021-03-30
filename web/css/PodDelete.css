@@ -1,0 +1,30 @@
+.main{
+    padding-top: 130px;
+    padding-left: 30px
+}
+
+.main form input{
+    border: 1.5px solid #28527A; 
+    border-radius:10px; 
+    background-color: #8ac4d0; 
+    color: white;
+}
+.main form button{
+    border: 1.5px solid #28527A; 
+    border-radius:10px; 
+    background-color: #8ac4d0;
+}
+
+#divOperationMessage{
+    background-color: black; 
+    border: 2px solid white; 
+    color: white;
+    display: block;  
+    width: 650px; 
+    height: 400px;  
+    top: 140px; 
+    left: 580px; 
+    position: fixed;
+    padding-left: 10px;
+    margin:auto;
+}

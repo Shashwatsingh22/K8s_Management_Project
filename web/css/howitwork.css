@@ -105,9 +105,7 @@ nav .wrapper{
   font-weight: 900;
   text-align: center;
   text-transform: capitalize;
-  /* text-decoration: underline; */
-  /* border-bottom: 1px solid wheat; */
-  /* border-bottom: 2px dashed wheat; */
+  
 }
 .content .row .mega-links{
   margin-left: -40px;
@@ -126,7 +124,27 @@ nav .wrapper{
 .row .mega-links li a:hover{
   color: #f2f2f2;
 }
-
+.documentation{
+ padding-top: 85px; 
+ text-align: left; 
+ font-size: 18px;
+ margin-left: 10px;
+}
+.topics h1{
+    font-size: 25px;
+    padding: 12px 3px;
+}
+.topics h2{
+  font-size: 20px;
+  padding: 8px 12px;
+}
+.topics h3{
+  font-size: 16px;
+  padding: 8px 20px;
+}
+.topics p{
+  padding: 8px 30px;
+}
 
 /* Media query for width = max-800px */
 @media screen and (max-width:800px)
@@ -138,17 +156,7 @@ nav .wrapper{
 }
 
 
-/* Media query for width = max-700px 
-we have to set this because here there is some problem in alignment*/
-/* @media screen and (max-width:800px)
-{
-  .menubar li{
-    list-style: none;
-    margin: 0px;
-  }
-} */
 
-<<<<<<< HEAD
 .footer{
   width: 100%;
   background-color: rgb(7, 7, 7);
@@ -186,65 +194,4 @@ we have to set this because here there is some problem in alignment*/
   text-align: center;
   padding-top: 10px;
 }
-/* .footer .social{
-  text-align: center;
-  padding: 20px 15px;
-  font-size: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 3px 1px;
-  background-color: black;
-  color: azure;
-}
-.footer .copyright{
-  text-align: center;
-  background-color: #f7f7f7;
-} 
 
-=======
-/*******************
-* Adding footer here
-**********8*********/
->>>>>>> a4624daa68fd0d5648a33690a492352a4b732520
-.footer{
-  width: 100%;
-  background-color: rgb(7, 7, 7);
-  color: white;
-  text-align: center;
-  /* height: 150px; */
-}
-.footer .social{
-   width: 100%;
-}
-
-.social{
-  text-align: center;
-}
-.social .fa {
-  padding: 25px 8px;
-  font-size: 25px;
-  text-align: center;
-  text-decoration: none;
-  margin: 3px 1px;
-  color: white;
-}
-.fa:hover {
-  opacity: 0.7;
-}
-.footer h4{
-  margin-bottom: 20px;
-}
-.footer .copyright{
-  width: 100%;
-  color: #686868;
-  text-align: center;
-  background: #343a40;
-  height: 30px;
-  text-align: center;
-<<<<<<< HEAD
-  padding-top: 15px;
-} */
-=======
-  padding-top: 10px;
-}
->>>>>>> a4624daa68fd0d5648a33690a492352a4b732520
