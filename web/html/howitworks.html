@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      djdg
+    </title>
+    <link rel="stylesheet" href="../css/howitwork.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <h2>Master Cluster</h2>
+          <h4>Complete Cluster Solutions</h4>
+        </div>
+        <ul class="menubar">
+          <li><a href="#">Home</a></li>
+          <li>
+            <a href="#" class="desktop-item">Services</a>
+            <div class="mega-box">
+              <div class="content">
+                <!-- Logo image box -->
+                <!-- <div class="row">
+                  <img src="1.jfif" alt="">
+                </div> -->
+  
+                <div class="row">
+                  <header>Configuration</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Configure with Same</a></li>
+                    <li><a href="#">Configure with Multi</a></li>
+                  </ul>
+                </div>
+  
+                <div class="row">
+                  <header>Pod</header>
+                  <ul class="mega-links">
+                    <li><a href="web/html/Get.html">Get All</a></li>
+                    <li><a href="web/html/PODDelete.html">Delete</a></li>
+                    <li><a href="web/html/Launch.html">Launch</a></li>
+                    <li><a href="web/html/PODDescribe.html">Describe</a></li>
+                    <li><a href="web/html/PODLabel.html">Label</a></li>
+                  </ul>
+                </div>
+  
+                <div class="row">
+                  <header>Deployment</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Delete</a></li>
+                    <li><a href="#">Describe</a></li>
+                    <li><a href="#">Scale In</a></li>
+                    <li><a href="#">Scale Out</a></li>
+                    <li><a href="#">Update Image</a></li>
+                  </ul>
+                </div>
+  
+                <div class="row">
+                  <header>Service</header>
+                  <ul class="mega-links">
+                    <li><a href="#">Get All</a></li>
+                    <li><a href="#">Exp Dep</a></li>
+                    <li><a href="#">Expose Pod</a></li>
+                    <li><a href="#">Expose Rc</a></li>
+                    <li><a href="#">Describe Service</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li><a href="web/html/howitworks.html" target="_blank">How it works</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Username</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="documentation">
+      <h1><strong>Documentation</strong></h1>
+
+    <div class="topics">
+      <h1>Home Page Of Application</h1>
+        <img src="1.jpeg" alt="">
+      <h1>Configuration of Multi Node Cluster on Cloud:</h1>
+
+<h2>Multi Node Cluster:</h2>
+    
+  <p>Multi Node Cluster is a relation between master and slave in which there are many slave which is control by a single master. This will divide the work and will not put any burden on a single pod which results in reducing of time complexity. 
+  </p>
+<h2>why Configuration on Clouds:</h2>
+
+      <p>We can configure it on any datacenter which will be controlled by us. So we use clouds services to configure it.  After being configured , the user does not need to do anything, all is our business , we just want your details like access key, passwords or make an IAM user accounts on 
+        the clouds and give us  that much of access so that we can create instance and use that instance.  In this it will be that you just need to tell how many master will be there and how many slaves. In which we can create high availability architecture with the help of multi master structure  in which there can be many master as well as slave and if one master is down then we will have another master .
+      </p>
+
+<h1>Configure : </h1>   
+     <h2>1.Cluster on Same Cloud Plateform:</h2>
+               <p>In this, user have to tell that how much maser and slave will be in order to build architecture on a single platform like aws , google clouds, azure etc.<p>
+               
+     <h2>2.Cluster on Multi Cloud Plateform:</h2>
+                   
+                <p>In today’s industry , everyone needs all the architecture in multimode. As one slave is running on their local datacenter , another on AWS or Google clouds  and all are running on some other clouds . This is Multiclouds Architecture.</p>
+                <h2>Tool used for automation:</h2>
+
+                <p>We are using ANSIBLE for automation which is good for the configuration but not for provisioning but we know how to provision it with the help of ANSIBLE.
+                  Now it will be the task of ANSIBLE to download the required software which we have already hosted on our
+                  cloud which is a controller node so that we can manage user node and do anything.</p>
+     
+     <h2>Kubernetes:</h2>
+           <p>Kubernetes is an open source container orchestration engine for automating deployment, scaling, and management of containerized applications. The open source project is hosted by the Cloud Native Computing Foundation
+          
+            Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.</p>
+     
+     
+     
+     <h2>Kubernetes Services</h2>
+     <h3>1.	 Pod </h3>
+          <p>Pods are the smallest, most basic deployable objects in Kubernetes. A Pod represents a single instance of a running process in your cluster. Pods contain one or more containers, such as Docker containers. When a Pod runs multiple containers, the containers are 
+            managed as a single entity and share the Pod's resources.</p>
+     
+     
+                  
+     
+     
+         <h3>•	Launch Pod:</h3> 
+             <p>If we want create a new pod, then click on the launch pod and then we will give a tag and use any image like httpt  then our pod will be created.
+            </p>
+       
+     
+     
+     
+     
+     
+     
+          <h3> •	Get All:</h3> 
+              <p>From this we can find out how many pods are in running in  our entire cluster.</p>
+                         
+                         
+     
+     
+          <h3>•	Delete Pod:</h3>
+         <p>To delete an existing pods from the cluster without login from clouds using this App</p>
+          <h3>•	Describe Pod:</h3>
+            <p>It will describe all things about the pods  after taking a label value</p>
+     
+     
+     
+      
+     
+     
+     
+          <h3>•	Get Pods by label Value:</h3>
+                           
+                     
+        
+          
+                
+     <h3>2.	Deployment</h3>
+            <p>A Deployment provides declarative update    for Pods and ReplicaSets . You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to the desired state at a controlled rate. You can define Deployments to create new ReplicaSets, or to remove existing
+               Deployments and adopt all their resources with new Deployments.</p>
+                                
+     
+     <h3>•	Create Deployment:</h3>
+     <p>The ReplicaSet creates Pods in the background. 
+       Check the status of the rollout to see if it succeeds or not. </p>
+    <h3>•	Get All:</h3> 
+        <p>From this we can find out how many 
+          deployment are in running in  our entire cluster.</p>
+     <h3>•	Delete Deployment:</h3>
+     <p>To delete an existing deployment from the cluster without login</p>
+     <h3>•	Describe Deployment Get RC(Replication Controller) Detail:</h3>
+        <p>If a pod is going down , it helps to restart it or if it is not restarted , then it helps to male a same replica. It helps to fullfill the need of deployment of admin .</p>
+     <h3>•	Get RS(Replica Set) Detail:</h3>
+        <p>A ReplicaSet's purpose is to maintain a stable set of replica Pods running at any given time. As such, it is often used to guarantee the availability of a specified number of identical Pods</p> 
+     <h3>•	Scale_Out:</h3> 
+         <p>We can increase the deployment using this scale_out button</p>
+     <h3>•	Scale_in:</h3>
+        <p>We can decrease the deployment using this scale_in button</p>
+     <h3>•	Update Version of the image:</h3>
+     
+     
+     
+     
+     
+     
+     <h3>3.	Secret</h3>
+                   
+                        
+     
+    <h3> 4.	Service</h3>
+     <h3>5.	Namespace</h3>
+     <h3>6.	Storage</h3>
+     <h3>7.	Multi Container Pod</h3>
+     <h3>8.	Cluster role</h3>
+     <h3>9.	Demon Set</h3>
+     <h3>10.	Package Manger (Helm)</h3> 
+     
+     
+     
+     <h2>Get Shell :</h2>
+     
+                       
+     <h3>1.	Master</h3>
+     <h3>2.	Container</h3>
+     <h3>Image  Creater Docker:</h3>
+     <h3>1.	Create Image:</h3>
+          
+        </div>
+    </div>
+    <div class="footer">
+      <div class="social">
+        <a href="https://github.com/NeerajSaini12560" target="_blank" class="fa fa-github"></a>
+        <a href="#" target="_blank" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/_neerajsaini_" target="_blank" class="fa fa-twitter"></a>
+        <a href="https://www.linkedin.com/in/neeraj-saini/" target="_blank" class="fa fa-linkedin"></a>
+        <a href="https://www.instagram.com/_.neerajsaini._/" target="_blank" class="fa fa-instagram"></a>
+        <h4>aghljgdflkgalkgfklagjkagfrajbgyuhfaslgfldaaldksjkflagfkllkkaglksag
+          skadgfljagdfjsjfgsjfashgiewjkiashdhfkjashga
+        </h4>
+      </div>
+        <div class="copyright">
+           &copy; MAster Cluster | All Cpoyright Issue
+        </div>
+    </div>
+    </div>
+  </body>
+</html>
