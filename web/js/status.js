@@ -7,8 +7,7 @@
 // GetAll function
 function get_all(){
     var service = 'pod';
-    var subService = 'labelValue';
-    // var tag = document.getElementById("labelValue").innerHTML;
+    var subService = 'get_all';
 
     var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`
 

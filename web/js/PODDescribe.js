@@ -7,8 +7,7 @@
 // GetAll function
 function get_all(){
     var service = 'pod';
-    var subService = 'labelValue';
-    // var tag = document.getElementById("labelValue").innerHTML;
+    var subService = 'describe';
 
     var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`
 
@@ -16,6 +15,7 @@ function get_all(){
 
     axios.get(url)
     .then((response)=>{
+        console.log(response)
         var value = document.createTextNode(`->  ${response.data}`);
         content.appendChild(value);
 
