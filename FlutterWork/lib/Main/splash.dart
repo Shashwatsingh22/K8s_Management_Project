@@ -8,7 +8,7 @@ class Splash extends StatefulWidget {
   _SplashState createState() => _SplashState();
 }
 
-class _SplashState extends State<Splash> {
+class _SplashState extends State<Splash>  {
   @override
   void initState() {
     super.initState();
@@ -23,7 +23,7 @@ class _SplashState extends State<Splash> {
                Container(
                  width: MediaQuery.of(context).size.width,
                  height: MediaQuery.of(context).size.height,
-                 color: Color(0xFF3171D8),
+                 color: Colors.black,
                   child: 
                     Stack( 
                       children:<Widget>[
@@ -32,7 +32,7 @@ class _SplashState extends State<Splash> {
                          height:MediaQuery.of(context).size.height*0.6,
                          decoration: BoxDecoration(
                      image: DecorationImage(
-                     image:AssetImage("assets/logo1.jpg"), 
+                     image:AssetImage("assets/main.png"), 
                    )
                   ),
                        ),),
@@ -42,7 +42,7 @@ class _SplashState extends State<Splash> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
                       SizedBox(height: 20.0),
-                      FadingText('K8s Management ....',
+                      FadingText('Master Cluster Loading ....',
                       style: TextStyle(
                         color: Color(0xDAFFFFFF),
                         fontWeight:FontWeight.bold,

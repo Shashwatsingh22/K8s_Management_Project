@@ -25,7 +25,7 @@ class _ExposeState extends State<Expose> {
 
 void execute(var svc,var subsvc,var tag,var port,var type) async
 {
-  var url="http://master_ip/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&app_port=$port&typeP=$type";
+  var url="http://13.232.160.12/cgi-bin/main.py?service=$svc&subser=$subsvc&tag=$tag&app_port=$port&typeP=$type";
   var response = await http.get(url);
    webdata = response.body;
    MyNavigator.goToShell(context);
@@ -43,12 +43,12 @@ void execute(var svc,var subsvc,var tag,var port,var type) async
                                     fontSize: 20),
                                         ), 
                                     ),
-                        backgroundColor: Color(0xFF3171D8),
+                        backgroundColor: Colors.black87,
                         actions: <Widget>[Icon(Icons.account_circle,
                         size: 45,)], 
                       ), 
     body : Container(
-          color: Color(0xFF7CAAF5),
+          color: Colors.black,
           height: MediaQuery.of(context).size.height,
            child: SingleChildScrollView(
                                 scrollDirection: Axis.vertical,

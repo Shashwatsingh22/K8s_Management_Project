@@ -24,12 +24,12 @@ class _DescribeSVCState extends State<DescribeSVC> {
                                     fontSize: 20),
                                         ), 
                                     ),
-                        backgroundColor: Color(0xFF3171D8),
+                        backgroundColor: Colors.black87,
                         actions: <Widget>[Icon(Icons.account_circle,
                         size: 45,)], 
                       ), 
     body : Container(
-          color: Color(0xFF7CAAF5),
+          color: Colors.black,
           height: MediaQuery.of(context).size.height,
 
           child: Column(
