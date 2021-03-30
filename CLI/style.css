@@ -49,7 +49,7 @@ h1::before
     }
 }
 
-/* SCREEN STYLING */
+/* CLI SCREEN STYLING */
 #screen{
     position: fixed;
     color: white;
@@ -61,8 +61,18 @@ h1::before
     padding: 1%;
     width: 80%;
     min-height: 75vh;
+    max-height: 75vh;
     border-radius: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
 }
+#screen::-webkit-scrollbar{
+    background-color: rgba(82, 82, 82, 0.651);
+}
+#screen::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.527);
+    outline: 1px solid rgb(131, 150, 170);
+  }
 #screen input{
     width: 90%;
     font-size: 3vh;

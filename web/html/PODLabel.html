@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/podLabel.css">
   </head>
    
   <body>
@@ -75,18 +76,24 @@
         </ul>
       </div>
     </nav>
-    <div class="" style="padding-top: 130px; padding-left: 30px">
-      <h1>Label</h1>
-      <form action="/action_page.php">
-        <input type="text" placeholder="Enter Tag Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <input type="submit" value="Submit" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
-      </form>
+    
+    <div class="main">
+      <div class="form-content">
+        <h1>Label</h1>
+
+        <form>
+          <input id="labelValue" type="text" placeholder="Enter Tag" name="labelValue" >
+          <br><br>
+          <button onclick="lab()" >Submit</button>
+        </form>
+      </div>
+
+      <div id="divOperationMessage" >
+      </div>
+
     </div>
-    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
-                padding-left: 10px;margin:auto;">
-    ------------------Whatever content inside-----------------------------
-    </div>
-    </div>
+
+    <script src="../js/podLabel.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

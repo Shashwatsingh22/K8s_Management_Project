@@ -148,30 +148,18 @@ we have to set this because here there is some problem in alignment*/
   }
 } */
 
-
-
+/*******************
+* Adding footer here
+**********8*********/
 .footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color: rgb(7, 7, 7);
   color: white;
   text-align: center;
-  height: 150px;
-  
-  
-  
+  /* height: 150px; */
 }
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  margin:0;
-}
-footer {
-  background-color: #fceec7;
-  height:50px;
+.footer .social{
+   width: 100%;
 }
 
 .social{
@@ -179,53 +167,24 @@ footer {
 }
 .social .fa {
   padding: 25px 8px;
-  font-size: 15px;
+  font-size: 25px;
   text-align: center;
   text-decoration: none;
   margin: 3px 1px;
+  color: white;
 }
 .fa:hover {
   opacity: 0.7;
 }
-
-.fa-facebook {
-color: white;
+.footer h4{
+  margin-bottom: 20px;
 }
-
-.fa-twitter {
-
-color: white;
-}
-
-.fa-google {
-
-color: white;
-}
-
-.fa-linkedin {
-
-color: white;
-}
-
-.fa-youtube {
-
-color: white;
-}
-
-.fa-instagram {
-
-color: white;
-}
-
 .footer .copyright{
   width: 100%;
   color: #686868;
   text-align: center;
   background: #343a40;
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
   height: 30px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 10px;
 }

@@ -1,0 +1,36 @@
+.form-content{
+    margin-top: 100px;
+    position: absolute;
+}
+#labelValue{
+    /* background-color: black;  */
+    border: 2px solid black; 
+    color: white;
+    /* padding-left: 10px; */
+    margin:auto;
+}
+
+input{
+    border: 1.5px solid #1C1A2A; 
+    border-radius:10px; 
+    background-color: #8ac4d0; 
+    color: white;
+}
+button{
+    border: 1.5px solid #1C1A2A;
+    border-radius:10px; 
+    background-color: #8ac4d0;
+}
+
+#divOperationMessage{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 250px;
+    /* position: absolute; */
+    background-color: black; 
+    /* border: 2px solid white;  */
+    color: white;
+    width: 400px; 
+    height: 400px;  
+    /* position: fixed; */
+}
