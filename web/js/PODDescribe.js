@@ -8,8 +8,8 @@
 function get_all(){
     var service = 'pod';
     var subService = 'describe';
-
-    var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`
+    var tagName = document.getElementById('tagName');
+    var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}`;
 
     var content = document.createElement('p');
 
