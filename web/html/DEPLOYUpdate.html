@@ -14,7 +14,7 @@
           <h4>Complete Cluster Solutions</h4>
         </div>
         <ul class="menubar">
-          <li><a href="#">Home</a></li>
+          <li><a href="/index.html">Home</a></li>
           <li>
             <a href="#" class="desktop-item">Services</a>
             <div class="mega-box">
@@ -27,68 +27,128 @@
                 <div class="row">
                   <header>Configuration</header>
                   <ul class="mega-links">
-                    <li><a href="#">Configure with Same</a></li>
-                    <li><a href="#">Configure with Multi</a></li>
+                    <li><a href="Configuration.html">Configure with Same</a></li>
+                    <li><a href="Configuration.html">Configure with Multi</a></li>
                   </ul>
                 </div>
   
                 <div class="row">
                   <header>Pod</header>
                   <ul class="mega-links">
-                    <li><a href="#">Get All</a></li>
-                    <li><a href="#">Delete</a></li>
-                    <li><a href="#">Launch</a></li>
-                    <li><a href="#">Describe</a></li>
-                    <li><a href="#">Label</a></li>
+                    <li><a href="Get.html">Get All</a></li>
+                    <li><a href="PODDelete.html">Delete</a></li>
+                    <li><a href="PODlaunch.html">Launch</a></li>
+                    <li><a href="PODDescribe.html">Describe</a></li>
+                    <li><a href="PODLabel.html">Label</a></li>
                   </ul>
                 </div>
   
                 <div class="row">
                   <header>Deployment</header>
                   <ul class="mega-links">
-                    <li><a href="#">Create</a></li>
-                    <li><a href="#">Delete</a></li>
-                    <li><a href="#">Describe</a></li>
-                    <li><a href="#">Scale In</a></li>
-                    <li><a href="#">Scale Out</a></li>
-                    <li><a href="#">Update Image</a></li>
+                    <li><a href="DEPLOYCreate.html">Create</a></li>
+                    <li><a href="DEPLOYDelete.html">Delete</a></li>
+                    <li><a href="DEPLOYDescribe.html">Describe</a></li>
+                    <li><a href="DEPLOYScale.html">Scale In</a></li>
+                    <li><a href="DEPLOYScale.html">Scale Out</a></li>
+                    <li><a href="DEPLOYUpdate.html">Update Image</a></li>
                   </ul>
                 </div>
   
                 <div class="row">
                   <header>Service</header>
                   <ul class="mega-links">
-                    <li><a href="#">Get All</a></li>
-                    <li><a href="#">Exp Dep</a></li>
-                    <li><a href="#">Expose Pod</a></li>
-                    <li><a href="#">Expose Rc</a></li>
-                    <li><a href="#">Describe Service</a></li>
+                    <li><a href="SVCGet.html">Get All</a></li>
+                    <li><a href="SvcDeploy.html">Exp Dep</a></li>
+                    <li><a href="SVCPod.html">Expose Pod</a></li>
+                    <li><a href="SvcRc.html">Expose Rc</a></li>
+                    <li><a href="SvcDes.html">Describe Service</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
           
-          <li><a href="#">How it works</a></li>
+          <li><a href="howitworks.html">How it works</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Username</a></li>
         </ul>
       </div>
     </nav>
+
     <div class="" style="padding-top: 130px; padding-left: 30px">
       <h1>Update</h1>
-      <form action="/action_page.php">
-        <input type="text" placeholder="Enter Tag Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <input type="text" placeholder="Enter Currrent Container Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <input type="text" placeholder="Enter Updated Image Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <input type="submit" value="Submit" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
-      </form>
+      
+        <input id="tagName" type="text" placeholder="Enter Tag Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        
+        <br><br>
+
+        <input id="containerName" type="text" placeholder="Enter Currrent Container Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <br><br>
+
+        <input id="imageName" type="text" placeholder="Enter Updated Image Name...."  style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <br><br>
+
+        <button onclick="deployUpdate()" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
+          Submit
+        </button>
+
     </div>
+    
     <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
                 display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
                 padding-left: 10px;margin:auto;">
-    ------------------Whatever content inside-----------------------------
+                <h2 style="text-align:center;">OUTPUT</h2>
     </div>
-    </div>
+
+    
+    <script>
+      // var image_name= document.getElementById('image_name');
+      // var service = 'pod';
+      // var subService = 'launch';
+      // var tagName = document.getElementById('tagName');
+      // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tag}&image_name=${image_name}`;
+
+    
+      // deploy-describe function
+      function deployUpdate(){
+          var image_name= document.getElementById('imageName').value;
+          var service = 'deploy';
+          var subService = 'update_image';
+          var tagName = document.getElementById('tagName');
+          var containerName = document.getElementById('containerName').value;
+          // console.log(number)
+          var tagName = document.getElementById('tagName').value;
+          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}&current_container_name=${containerName}&updated_image=${image_name}`;
+          // console.log(url)
+          // var service = 'pod';
+          // var subService = 'launch';
+
+          // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`
+
+          var content = document.createElement('p');
+
+          axios.get(url)
+          .then((response)=>{
+              console.log(response)
+              var value = document.createTextNode(`->  ${response.data}`);
+              content.appendChild(value);
+
+              var element = document.getElementById("divOperationMessage");
+              element.appendChild(content);
+          })
+          .catch((error)=>{
+              console.log(error);
+              
+              var value = document.createTextNode(`->  ${error}`);
+              content.appendChild(value);
+
+              var element = document.getElementById("divOperationMessage");
+              element.appendChild(content);
+          })
+      }
+
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

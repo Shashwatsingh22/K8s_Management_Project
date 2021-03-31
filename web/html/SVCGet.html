@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Service Get</title>
     <link rel="stylesheet" href="../css/main.css">
   </head>
  
@@ -75,25 +75,15 @@
         </ul>
       </div>
     </nav>
-
     <div class="" style="padding-top: 130px; padding-left: 30px">
-      <h1>Deploy</h1>
-      
-        <input id="tagName" type="text" placeholder="Enter Tag Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        
-        <input id="appPort" type="text" placeholder="Enter AppPort Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
-        
-        <br><br>
+      <h1>Get All</h1>
 
-        <input id="typeName" type="text" placeholder="Enter TypeP Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
-        
-        <br><br>
-
-        <button onclick="svcDeploy()" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
+        <button onclick="serviceGet()" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
           Submit
         </button>
-    </div>
 
+    </div>
+    
     <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
                 display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
                 padding-left: 10px;margin:auto;">
@@ -110,14 +100,15 @@
 
     
       // deploy-describe function
-      function svcDeploy(){
-          var appPort= document.getElementById('appPort').value;
+      function serviceGet(){
+        //   var image_name= document.getElementById('imageName').value;
           var service = 'svc';
-          var subService = 'exp_deploy';
-          var tagName = document.getElementById('tagName').value;
-          var typeName = document.getElementById('typeName').value;
-
-          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}&app_port=${appPort}&typeP=${typeName}`;
+          var subService = 'get';
+        //   var tagName = document.getElementById('tagName');
+        //   var containerName = document.getElementById('containerName').value;
+          // console.log(number)
+        //   var tagName = document.getElementById('tagName').value;
+          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`;
           // console.log(url)
           // var service = 'pod';
           // var subService = 'launch';

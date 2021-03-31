@@ -58,9 +58,9 @@
                 <div class="row">
                   <header>Service</header>
                   <ul class="mega-links">
-                    <li><a href="">Get All</a></li>
+                    <li><a href="SVCGet.html">Get All</a></li>
                     <li><a href="SvcDeploy.html">Exp Dep</a></li>
-                    <li><a href="">Expose Pod</a></li>
+                    <li><a href="SVCPod.html">Expose Pod</a></li>
                     <li><a href="SvcRc.html">Expose Rc</a></li>
                     <li><a href="SvcDes.html">Describe Service</a></li>
                   </ul>
@@ -80,9 +80,13 @@
     <div class="" style="padding-top: 130px; padding-left: 30px">
       <h1>Scale_Out</h1>
       
-        <input id="tagName" type="text" placeholder="Enter Tag Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <input type="text" placeholder="Enter The Number...." id="lname" name="lname" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;"><br><br>
-        <button type="submit" value="Submit" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
+        <input id="tagName" type="text" placeholder="Enter Tag Name...." name="" value="" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <br><br>
+
+        <input type="number" placeholder="Enter The Number...." id="number" name="lname" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <br><br>
+
+        <button onclick="deployScale()" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
           Submit
         </button>
 
@@ -104,12 +108,15 @@
 
     
       // deploy-describe function
-      function deployDescribe(){
+      function deployScale(){
           // var image_name= document.getElementById('image_name');
           var service = 'deploy';
-          var subService = 'describe';
-          var tagName = document.getElementById('tagName');
-          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}`;
+          var subService = 'scale_out';
+          var number = document.getElementById('number').value;
+          // console.log(number)
+          var tagName = document.getElementById('tagName').value;
+          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}&num=${number}`;
+          // console.log(url)
           // var service = 'pod';
           // var subService = 'launch';
 
