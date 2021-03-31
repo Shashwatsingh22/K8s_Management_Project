@@ -1,0 +1,36 @@
+body{
+    background-image: url("../images/wall3.jpg");
+    /* background-position: center; */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.parent{
+    padding-top: 145px;
+    float: left;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.main{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-evenly;
+    /* padding:20px;  */
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.main a{
+    margin-right: 20px;
+    text-decoration: none;
+}
+.main button{
+    padding: 10px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    background-color: rgba(240, 255, 255, 0.76);
+    border: none;
+    border-radius: 5px;
+}
+.main button:hover{
+    background-color: azure;
+}

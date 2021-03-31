@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Get Command</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/Get.css">
   
   <body>
     <nav>
@@ -71,32 +72,33 @@
       </div>
     </nav>
 
-    <div class="" style="padding-top: 130px; padding-left: 30px">
+    <div class="main">
       <h1>Secret</h1>
-      <input id="tagName" type="text" placeholder="Enter Tag Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+      <input id="tagName" type="text" placeholder="Enter Tag Name">
       
       <br><br>
-      <input id="keyName" type="text" placeholder="Enter Key Name...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
-      
-      <br><br>
-
-      <input id="value" type="text" placeholder="Enter Value...." style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+      <input id="keyName" type="text" placeholder="Enter Key Name">
       
       <br><br>
 
-      <button onclick="deployDescribe()" type="submit" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">
+      <input id="value" type="text" placeholder="Enter Value">
+      
+      <br><br>
+
+      <button onclick="deployDescribe()" type="submit">
         Submit
       </button>
 
     </div>
 
 
-    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
-                padding-left: 10px;margin:auto;">
-                <h2 style="text-align:center;">OUTPUT</h2>
+    <div id="divOperationMessage">
+                <h2 style="text-align:center; margin-bottom: 20px;">OUTPUT</h2>
     </div>
 
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
         // var image_name= document.getElementById('image_name');
       // var service = 'pod';

@@ -1,3 +1,6 @@
+body{
+    background-image: url(../images/wall3.jpg);
+}
 /************
 * SETTING THE SCREEN BELOW navigation bar
 ***************/
@@ -27,11 +30,72 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+
+
+/***************
+ Styling features 
+ *******************/
+#features{
+    display: flex;
+
+    /* flex-direction: row; */
+    justify-content: space-evenly;
+    border-bottom: 2px solid rgb(77, 77, 78);
+    /* margin-bottom: 40px; */
+    background-color: rgb(238, 231, 231);
+}
+.feature-box .icon{
+    color: rgb(250, 53, 53);
+}
+#features p{    
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+
 /***************
  body content styling 
  *******************/
+.parent{
+    text-align: center;
+    /* padding: 40px 0px; */
+    background-color: rgba(250, 235, 215, 0.918);
+}
 
-.main1{
+.parent .container{
+    padding: 10px 40px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.parent .container h1{
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+.parent .container p{
+    font-size: 20px;
+    padding: 0px 40px;
+    word-break: break-all;
+}
+
+.parent .container a{
+    text-decoration: none;
+}
+.parent .container button{
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    color: wheat;
+}
+.parent .container button:hover{
+    color: rgb(245, 222, 179);
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+/* .main1{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
@@ -99,4 +163,4 @@
   .one:hover {
   background-color: #FBDA61;
   background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
-  }
+  } */

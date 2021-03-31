@@ -5,7 +5,30 @@
     <title></title>
     <link rel="stylesheet" href="../css/main.css">
   </head>
-   
+  
+  <style>
+    .container{
+      padding-top: 200px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      text-align: center;
+    }
+    .container a{
+      text-decoration: none;
+    }
+    .container button{
+    padding: 20px 40px;
+    font-size: 30px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(235, 232, 232);
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+  </style>
+
   <body>
     <nav>
       <div class="wrapper">
@@ -71,17 +94,26 @@
         </ul>
       </div>
     </nav>
-    <div class="" style="text-align: center; padding:20px; padding-top: 100px;">
-      <a class="a" href="#">
-        <button class="one" style=" border: 0px solid;   width: 300px;  height: 150px;">Expose Deployment</button>
-      </a>
-      <a class="b" href="#">
-        <button class="two" style="border: 0px solid;   width: 300px;  height: 150px;">Expose Pod</button>
-      </a>
-      <a class="c" href="#">
-        <button class="three" style="border: 0px solid;    width: 300px;  height: 150px;">Expose Replication Control</button>
-      </a>
-    </div>
+    
+
+    <div class="container">
+      <div>
+        <a href="#">
+          <button >Expose Deployment</button>
+        </a>
       </div>
+
+      <div>
+        <a class="b" href="#">
+          <button>Expose Pod</button>
+        </a>
+      </div>
+
+      <div>
+        <a>
+          <button>Expose Replication Control</button>
+        </a>
+      </div>
+    </div>
   </body>
 </html>

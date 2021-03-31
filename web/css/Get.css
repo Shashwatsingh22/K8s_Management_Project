@@ -1,0 +1,38 @@
+.main{
+    margin-top: 250px;
+    margin-left: 150px;
+    text-align: center;
+    float: left;
+    
+}
+
+.main h1{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+.main input{
+    border: none; 
+    border-radius:5px; 
+
+    background-color: #ffffff; 
+    color: black;
+    /* font-weight: bold; */
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main button{
+    margin-top: 5px;
+    border: 2px solid black; 
+    border-radius:20px; 
+    background-color: rgba(109, 104, 104, 0.541);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main button:focus{
+    outline: none;
+}

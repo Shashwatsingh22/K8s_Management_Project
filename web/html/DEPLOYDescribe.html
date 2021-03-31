@@ -94,6 +94,7 @@
     </div>
 
     
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script>
       // var image_name= document.getElementById('image_name');
       // var service = 'pod';
@@ -107,7 +108,7 @@
           // var image_name= document.getElementById('image_name');
           var service = 'deploy';
           var subService = 'describe';
-          var tagName = document.getElementById('tagName');
+          var tagName = document.getElementById('tagName').value;
           var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}`;
           // var service = 'pod';
           // var subService = 'launch';

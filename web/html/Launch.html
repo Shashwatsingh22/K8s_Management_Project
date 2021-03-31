@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Launch</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/launch.css">
   </head>
    
   <body>
@@ -71,32 +72,89 @@
         </ul>
       </div>
     </nav>
-    <div class="" style=" padding:20px; padding-top: 100px;">
-      <a class="a" href="">
-        <button class="one" style=" border: 0px solid;">Get</button>
-      </a>
-      <a class="b" href="SvcDeploy.html">
-        <button class="one" style="border: 0px solid;">Exp_Deploy</button>
-      </a>
-    </div>
-    <div class="" style=" padding:20px; padding-top: 50px;">
-      <a class="c" href="SvcPod.html">
-        <button class="one" style="border: 0px solid;">Exp_Pod</button>
-      </a>
-      <a class="c" href="SvcRc.html">
-        <button class="one" style="border: 0px solid;">Exp_Rc</button>
+
+  <div class="parent">
+    <div class="main">
+      <a class="a">
+        <button onclick="getall()" >Get</button>
       </a>
     </div>
-    <div class="" style=" padding:20px; padding-top: 50px;">
-      <a class="c" href="SvcDes.html">
-        <button class="one" style="border: 0px solid;">Des_Svc</button>
+
+    <div class="main">
+      <a class="b" href="./SvcDeploy.html">
+        <button >Exp_Deploy</button>
       </a>
     </div>
-    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                display: block;  width: 650px; height: 450px;  top: 100px; left: 580px; position: fixed;
-                padding-left: 10px;margin:auto;">
-    ------------------Whatever content inside-----------------------------
+
+    <div class="main">
+      <a class="c" href="./SvcPod.html">
+        <button>Exp_Pod</button>
+      </a>
+    </div>
+
+      <div class="main">
+      <a  href="./SvcRc.html">
+        <button>Exp_Rc</button>
+      </a>
+    </div>
+
+    <div class="main">
+      <a class="c" href="./SvcDes.html">
+        <button>Des_Svc</button>
+      </a>
+    </div>
+  </div>
+    
+
+    <div id="divOperationMessage">
+                <h2 style="text-align:center;">OUTPUT</h2>
     </div>
     </div>
+    
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+      // var image_name= document.getElementById('image_name');
+      // var service = 'pod';
+      // var subService = 'launch';
+      // var tagName = document.getElementById('tagName');
+      // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tag}&image_name=${image_name}`;
+
+          
+      // POD-LAUNCH function
+      function getall(){
+          // var image_name= document.getElementById('image_name').value;
+          var service = 'svc';
+          var subService = 'get';
+          // var tagName = document.getElementById('tagName').value;
+          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`;
+          // var service = 'pod';
+          // var subService = 'launch';
+
+          // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`
+
+          var content = document.createElement('p');
+
+          axios.get(url)
+          .then((response)=>{
+              console.log(response)
+              var value = document.createTextNode(`->  ${response.data}`);
+              content.appendChild(value);
+
+              var element = document.getElementById("divOperationMessage");
+              element.appendChild(content);
+          })
+          .catch((error)=>{
+              console.log(error);
+              
+              var value = document.createTextNode(`->  ${error}`);
+              content.appendChild(value);
+
+              var element = document.getElementById("divOperationMessage");
+              element.appendChild(content);
+          })
+      }
+    </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
 </html>

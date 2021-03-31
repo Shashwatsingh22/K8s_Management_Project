@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/PodDelete.css">
+    <!-- <link rel="stylesheet" href="../css/PodDelete.css"> -->
+    <link rel="stylesheet" href="../css/pod.css">
   </head>
   
   <body>
@@ -74,26 +75,61 @@
     </nav>
 
 
-    <div class="" style="padding-top: 130px; padding-left: 30px">
+    <div class="main">
       <h1>Delete</h1>
 
-        <input type="text" placeholder="Enter Tag Name...." name="" value="" style="border: 1.5px solid #1C1A2A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <input type="text" placeholder="Enter Tag Name...." >
         <br><br>
 
-        <button  onclick="podDelete()" style="border: 1.5px solid #1C1A2A; border-radius:10px; background-color: #8ac4d0;">
+        <button  onclick="podDelete()">
         Submit
       </button>
     </div>
 
-      <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                  display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
-                  padding-left: 10px;margin:auto;">
+      <div id="divOperationMessage" >
         <h2 style="text-align:center;">OUTPUT</h2>
         
       </div>
 
 
-      <script src="../js/PODDelete.js"></script>
+      
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script>
+        // var imageName= 'kubectl';
+        // var service = 'pod';
+        // var subService = 'get_all';
+        // var tag = "sudo%20kubectl%20get%20pod";
+        // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tag}&image_name=${imageName}`
+            
+        // GetAll function
+        function get_all(){
+            var service = 'pod';
+            var subService = 'delete';
+            var tagName = document.getElementById('tagName').value;
+            var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}`;
+
+            var content = document.createElement('p');
+
+            axios.get(url)
+            .then((response)=>{
+                console.log(response)
+                var value = document.createTextNode(`->  ${response.data}`);
+                content.appendChild(value);
+
+                var element = document.getElementById("divOperationMessage");
+                element.appendChild(content);
+            })
+            .catch((error)=>{
+                console.log(error);
+                
+                var value = document.createTextNode(`->  ${error}`);
+                content.appendChild(value);
+
+                var element = document.getElementById("divOperationMessage");
+                element.appendChild(content);
+            })
+        }
+      </script>
       <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     
     </body>

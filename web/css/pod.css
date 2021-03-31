@@ -1,17 +1,28 @@
 .main{
-    padding-top: 130px; 
-    padding-left: 30px;
-    font-family: 'Times New Roman', Times, serif;
+    padding-top: 160px; 
+    padding-left: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     letter-spacing: 1px;
+    float: left;
+    text-align: center;
 }
 
+.main h1{
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 .main input{
-    border: 1.5px solid #28527A; 
-    border-radius:10px; 
-    background-color: #7ee2f7; 
-    padding: 10px 20px;
+    border: none;
+    border-radius:5px; 
+    background-color: #ffffff; 
+    padding: 15px 30px;
     color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 20px;
 }
 .main input:focus{
     outline: none;
@@ -19,21 +30,13 @@
 .main button{
     border: 2px solid #28527A; 
     border-radius:100px; 
+    font-size: 15px;
     font-weight: bold;
     background-color: #cee2f8;
     padding: 10px 20px;
 }
 
-#divOperationMessage{
-    background-color: black; 
-    border: 2px solid white; 
-    color: white;
-    display: block;  
-    width: 650px; 
-    height: 400px;  
-    top: 140px; 
-    left: 580px; 
-    position: absolute;
-    padding-left: 10px;
-    margin:auto;
+
+.main button:hover{
+    background-color: #7aaad8;
 }

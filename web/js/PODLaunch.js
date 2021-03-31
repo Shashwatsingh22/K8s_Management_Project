@@ -7,10 +7,10 @@
     
 // POD-LAUNCH function
 function podLaunch(){
-    var image_name= document.getElementById('image_name');
+    var image_name= document.getElementById('image_name').value;
     var service = 'pod';
     var subService = 'launch';
-    var tagName = document.getElementById('tagName');
+    var tagName = document.getElementById('tagName').value;
     var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}&image_name=${image_name}`;
     // var service = 'pod';
     // var subService = 'launch';

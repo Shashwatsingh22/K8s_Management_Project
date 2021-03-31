@@ -4,8 +4,25 @@
     <meta charset="utf-8">
     <title>Delete</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/launch.css">
   </head>
  
+  <style>
+    .parent{
+      padding-top: 120px;
+      float: left;
+      margin-left: 100px;
+      margin-bottom: 100px;
+    }
+    .main{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        /* padding:20px;  */
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+  </style>
   <body>
     <nav>
       <div class="wrapper">
@@ -14,104 +31,164 @@
           <h4>Complete Cluster Solutions</h4>
         </div>
         <ul class="menubar">
-          <li><a href="#">Home</a></li>
+          <li><a href="../../index.html">Home</a></li>
           <li>
             <a href="#" class="desktop-item">Services</a>
             <div class="mega-box">
               <div class="content">
-                <!-- Logo image box -->
-                <!-- <div class="row">
-                  <img src="1.jfif" alt="">
-                </div> -->
-  
+                 
                 <div class="row">
                   <header>Configuration</header>
                   <ul class="mega-links">
-                    <li><a href="#">Configure with Same</a></li>
-                    <li><a href="#">Configure with Multi</a></li>
+                    <li><a href="Configuration.html">Configure with Same</a></li>
+                    <li><a href="Configuration.html">Configure with Multi</a></li>
                   </ul>
                 </div>
   
                 <div class="row">
                   <header>Pod</header>
                   <ul class="mega-links">
-                    <li><a href="#">Get All</a></li>
-                    <li><a href="#">Delete</a></li>
-                    <li><a href="#">Launch</a></li>
-                    <li><a href="#">Describe</a></li>
-                    <li><a href="#">Label</a></li>
+                    <li><a href="./Get.html">Get All</a></li>
+                    <li><a href="./PODDelete.html">Delete</a></li>
+                    <li><a href="./PODlaunch.html">Launch</a></li>
+                    <li><a href="./PODDescribe.html">Describe</a></li>
+                    <li><a href="./PODLabel.html">Label</a></li>
                   </ul>
                 </div>
   
                 <div class="row">
                   <header>Deployment</header>
                   <ul class="mega-links">
-                    <li><a href="#">Create</a></li>
-                    <li><a href="#">Delete</a></li>
-                    <li><a href="#">Describe</a></li>
-                    <li><a href="#">Scale In</a></li>
-                    <li><a href="#">Scale Out</a></li>
-                    <li><a href="#">Update Image</a></li>
+                    <li><a href="./DEPLOYCreate.html">Create</a></li>
+                    <li><a href="./DEPLOYDelete.html">Delete</a></li>
+                    <li><a href="./DEPLOYDescribe.html">Describe</a></li>
+                    <li><a href="./DEPLOYScale.html">Scale In</a></li>
+                    <li><a href="./DEPLOYScale.html">Scale Out</a></li>
+                    <li><a href="./DEPLOYUpdate.html">Update Image</a></li>
                   </ul>
                 </div>
   
                 <div class="row">
                   <header>Service</header>
                   <ul class="mega-links">
-                    <li><a href="#">Get All</a></li>
-                    <li><a href="#">Exp Dep</a></li>
-                    <li><a href="#">Expose Pod</a></li>
-                    <li><a href="#">Expose Rc</a></li>
-                    <li><a href="#">Describe Service</a></li>
+                    <li><a href="./SVCGet.html">Get All</a></li>
+                    <li><a href="./SvcDeploy.html">Exp Dep</a></li>
+                    <li><a href="./SVCPod.html">Expose Pod</a></li>
+                    <li><a href="./SvcRc.html">Expose Rc</a></li>
+                    <li><a href="./SvcDes.html">Describe Service</a></li>
                   </ul>
                 </div>
               </div>
             </div>
           </li>
           
-          <li><a href="#">How it works</a></li>
+          <li><a href="./howitworks.html">How it works</a></li>
           <li><a href="#">About Us</a></li>
           <li><a href="#">Username</a></li>
         </ul>
       </div>
     </nav>
-    <div class="" style="padding:20px; padding-top: 100px;">
-      <a class="a" href="#">
-        <button class="one" style=" border: 0px solid;" >Get_All</button>
-      </a>
-      <a class="b" href="DEPLOYCreate.html">
-        <button class="one" style="border: 0px solid; ">Create</button>
-      </a>
+
+    <div class="parent">
+      <div class="main">
+        <a class="a">
+          <button onclick="getAll()" class="one" style=" border: 0px solid;" >Get_All</button>
+        </a>
+      </div>
+  
+      <div class="main">
+        <a class="b" href="DEPLOYCreate.html">
+          <button class="one" style="border: 0px solid; ">Create</button>
+        </a>
+      </div>
+      <div class="main">
+        <a class="c" href="DEPLOYDescribe.html">
+          <button class="one" style="border: 0px solid;">Describe</button>
+        </a>
+      </div>
+  
+      <div class="main">
+        <a class="c" href="DEPLOYDelete.html">
+          <button class="one" style="border: 0px solid;">Delete</button>
+        </a>
+      </div>
+  
+      <div class="main">
+        <a class="c" href="#">
+          <button class="one" style="border: 0px solid;">Get_rs</button>
+        </a>
+      </div>
+  
+      <div class="main">
+        <a class="c" href="#">
+          <button class="one" style="border: 0px solid;">Get_rc</button>
+        </a>
+      </div>
+  
+      <div class="main">
+        <a class="c" href="DEPLOYScale.html">
+          <button class="one" style="border: 0px solid;">Scale_out</button>
+        </a>
+      </div>
+  
+      <div class="main">
+        <a class="c" href="DEPLOYUpdate.html">
+          <button class="one" style="border: 0px solid;">Update Image</button>
+        </a>
+      </div>
+
     </div>
-    <div class="" style=" padding:20px; padding-top: 20px;">
-      <a class="c" href="DEPLOYDescribe.html">
-        <button class="one" style="border: 0px solid;">Describe</button>
-      </a>
-      <a class="c" href="DEPLOYDelete.html">
-        <button class="one" style="border: 0px solid;">Delete</button>
-      </a>
-    </div>
-    <div class="" style=" padding:20px; padding-top: 20px;">
-      <a class="c" href="#">
-        <button class="one" style="border: 0px solid;">Get_rs</button>
-      </a>
-      <a class="c" href="#">
-        <button class="one" style="border: 0px solid;">Get_rc</button>
-      </a>
-    </div>
-    <div class="" style=" padding:20px; padding-top: 20px;">
-      <a class="c" href="DEPLOYScale.html">
-        <button class="one" style="border: 0px solid;">Scale_out</button>
-      </a>
-      <a class="c" href="DEPLOYUpdate.html">
-        <button class="one" style="border: 0px solid;">Update Image</button>
-      </a>
-    </div>
-    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                display: block;  width: 650px; height: 450px;  top: 100px; left: 580px; position: fixed;
-                padding-left: 10px;margin:auto;">
-    ------------------Whatever content inside-----------------------------
+
+    <div id="divOperationMessage">
+      <h2 style="text-align:center;">OUTPUT</h2>
     </div>
     </div>
+
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script>
+      // var image_name= document.getElementById('image_name');
+      // var service = 'pod';
+      // var subService = 'launch';
+      // var tagName = document.getElementById('tagName');
+      // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tag}&image_name=${image_name}`;
+
+    
+      // deployCreate function
+      function getAll(){
+          // var image_name= document.getElementById('image_name').value;
+          var service = 'deploy';
+          var subService = 'get_all';
+          // var tagName = document.getElementById('tagName').value;
+          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`;
+          // var service = 'pod';
+          // var subService = 'launch';
+
+          // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`
+
+          var content = document.createElement('p');
+
+          axios.get(url)
+          .then((response)=>{
+              console.log(response)
+              var value = document.createTextNode(`->  ${response.data}`);
+              content.appendChild(value);
+
+              var element = document.getElementById("divOperationMessage");
+              element.appendChild(content);
+          })
+          .catch((error)=>{
+              console.log(error);
+              
+              var value = document.createTextNode(`->  ${error}`);
+              content.appendChild(value);
+
+              var element = document.getElementById("divOperationMessage");
+              element.appendChild(content);
+          })
+      }
+
+    </script>
   </body>
 </html>

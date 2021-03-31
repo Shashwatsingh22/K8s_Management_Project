@@ -1,7 +1,16 @@
-
 *{
   margin: 0px;
 }
+
+
+body{
+  background-image: url("../images/wall3.jpg");
+  /* background-position: center; */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
 nav{
   position: fixed;
   z-index: 80;
@@ -26,7 +35,7 @@ nav .wrapper{
   position: relative;
   bottom: 48px;
   background: -webkit-linear-gradient(rgb(255, 70, 70), rgb(221, 86, 255));
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
 }
 
@@ -137,6 +146,28 @@ nav .wrapper{
   }
 }
 
+#divOperationMessage{
+  /* margin-top: 200px; */
+  background-color: black; 
+  border: 2px solid white; 
+  color: white;
+              
+  /* display: block;   */
+  width: 650px; 
+  height: 450px;  
+  position: absolute;
+  top: 180px; 
+  left: 680px; 
+  position: fixed;
+  /* float: left; */
+  padding-left: 20px;
+  padding-top: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  margin:auto;
+  border: 2px solid greenyellow;
+  border-radius: 10px;
+
+}
 
 /* Media query for width = max-700px 
 we have to set this because here there is some problem in alignment*/
@@ -148,7 +179,6 @@ we have to set this because here there is some problem in alignment*/
   }
 } */
 
-<<<<<<< HEAD
 .footer{
   width: 100%;
   background-color: rgb(7, 7, 7);
@@ -200,12 +230,9 @@ we have to set this because here there is some problem in alignment*/
   text-align: center;
   background-color: #f7f7f7;
 } 
-
-=======
-/*******************
+******************
 * Adding footer here
-**********8*********/
->>>>>>> a4624daa68fd0d5648a33690a492352a4b732520
+*******************/
 .footer{
   width: 100%;
   background-color: rgb(7, 7, 7);
@@ -241,10 +268,5 @@ we have to set this because here there is some problem in alignment*/
   background: #343a40;
   height: 30px;
   text-align: center;
-<<<<<<< HEAD
   padding-top: 15px;
-} */
-=======
-  padding-top: 10px;
 }
->>>>>>> a4624daa68fd0d5648a33690a492352a4b732520
