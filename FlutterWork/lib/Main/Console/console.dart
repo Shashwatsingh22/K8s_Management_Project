@@ -25,7 +25,7 @@ class _ConsoleState extends State<Console> {
                                     fontSize: 20),
                                         ), 
                                     ),
-                        backgroundColor: Color(0xFF3171D8),
+                        backgroundColor: Colors.black87,
                         actions: <Widget>[Icon(Icons.account_circle,
                         size: 45,)], 
                       ), 
