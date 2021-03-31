@@ -1,0 +1,39 @@
+.main{
+    padding-top: 130px; 
+    padding-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.main input{
+    border: 1.5px solid #28527A; 
+    border-radius:10px; 
+    background-color: #7ee2f7; 
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.main input:focus{
+    outline: none;
+}
+.main button{
+    border: 2px solid #28527A; 
+    border-radius:100px; 
+    font-weight: bold;
+    background-color: #cee2f8;
+    padding: 10px 20px;
+}
+
+#divOperationMessage{
+    background-color: black; 
+    border: 2px solid white; 
+    color: white;
+    display: block;  
+    width: 650px; 
+    height: 400px;  
+    top: 140px; 
+    left: 580px; 
+    position: absolute;
+    padding-left: 10px;
+    margin:auto;
+}

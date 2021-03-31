@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pod.css">
   </head>
    
   <body>
@@ -76,24 +77,21 @@
       </div>
     </nav>
 
-    <div class="" style="padding-top: 130px; padding-left: 30px">
+    <div class="main">
       <h1>Launch</h1>
 
-        <input id="tagName" type="text" placeholder="Enter Tag Name...." name="tag" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <input id="tagName" type="text" placeholder="Tag Name...." name="tag">
         
         <br><br>
 
-        <input id="image_name" type="text" placeholder="Enter Docker Image Name...." name="image_name" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0; color: white;">
+        <input id="image_name" type="text" placeholder="Docker Image Name" name="image_name">
         
         <br><br>
 
-        <button onclick="podLaunch()" style="border: 1.5px solid #28527A; border-radius:10px; background-color: #8ac4d0;">Submit</button>
-  
+        <button onclick="podLaunch()">Submit</button>
     </div>
 
-    <div id="divOperationMessage" style="background-color: black; border: 2px solid white; color: white;
-                display: block;  width: 650px; height: 400px;  top: 140px; left: 580px; position: fixed;
-                padding-left: 10px;margin:auto;">
+    <div id="divOperationMessage">
                 <h2 style="text-align:center;">OUTPUT</h2>
     </div>
 
