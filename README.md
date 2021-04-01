@@ -9,7 +9,7 @@
 
 # Master Cluseter
 An app manager project, which helps users to managae the backend part of their apps like managing pods,
- creating cluster and many services are provided here. We hope you people will love this project.
+ creating cluster and many services are provided here.
 
 ## Configuration of Multi Node Cluster on Cloud:
 
