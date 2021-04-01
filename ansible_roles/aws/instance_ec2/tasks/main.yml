@@ -1,0 +1,17 @@
+---
+# tasks file for instance_ec2
+- name: Launching "{{ num }}" instance for "{{ tag }}"
+  ec2:
+          count: "{{ num  }}"
+          group_id: "{{ security_group_id }}"
+          image: "{{ image_id }}"
+          aws_access_key: "{{ usern  }}"
+          aws_secret_key: "{{ pass  }}"
+          instance_type: "{{ Instance_Type }}"
+          key_name: "{{ keyName  }}"
+          region: "{{ reg }}"
+          wait: yes
+          assign_public_ip: yes
+          instance_tags:
+                  Name: "{{ tag }}"
+          vpc_subnet_id: "{{ VPCsubnet_id }}"

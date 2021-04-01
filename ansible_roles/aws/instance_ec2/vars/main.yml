@@ -1,0 +1,12 @@
+---
+# vars file for instance_ec2
+num: 1
+tag: "PUT_TAG_HERE"
+security_group_id: "PUT_SECURITY_GROUP_ID_HERE"
+image_id: "ami-08e0ca9924195beba"
+Instance_Type:  "t2.micro"
+keyName: "PUT_YOUR_KEYNAME"
+reg: "ap-south-1"
+VPCsubnet_id: "PUT_VPC_SUBNET_ID"
+usern: "PUT_IAM_CREDENDTIALS"
+pass: "PUT_IAM_CREDENTIALS"
