@@ -1,0 +1,7 @@
+---
+# vars file for k8s_master
+cidr: "10.244.0.0/16"
+softwares:
+        - kubeadm
+        - kubelet
+        - kubectl  
