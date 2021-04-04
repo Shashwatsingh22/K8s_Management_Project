@@ -1,0 +1,48 @@
+---
+# tasks file for k8s_master
+- name: "Setting bridge-nf-call-iptables = 1"
+  shell: |
+        echo "1" > /proc/sys/net/bridge/bridge-nf-call-iptables
+  changed_when: false        
+
+# Initialing Master
+- name: "Initializing Master"
+  shell: "kubeadm init --pod-network-cidr={{ cidr }} --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem --node-name=master"
+  ignore_errors: yes
+
+# Creating the .kube directory
+- name: "Creating .kube directory"
+  shell: "mkdir -p $HOME/.kube"
+
+# Copying the /etc/k8s/admin.conf$HOME/.kube/config
+- name: "Copying /etc/kubernetes/admin.conf $HOME/.kube/config"
+  shell: "sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config"
+
+# Changing the owner permission of $HOME/.kube/config
+- name: "changing owner permission"
+  shell: "sudo chown $(id -u):$(id -g) $HOME/.kube/config"
+
+# Lets Genrate token so that slave can join that cluster
+- name: "Generating Token"
+  shell: "kubeadm token create  --print-join-command"
+  register: token
+  ignore_errors: yes
+
+- debug: 
+   msg : token.stdout
+
+- name: "host adding for storing token for further use"
+  add_host:
+          name: "token_master"
+          token: "{{ token.stdout }}"
+
+#Adding the Flannel Overlay NetWork for the Communication
+# Adding the support of Flannel Network for Overlay Network
+- name: Adding Flannel Network
+  command:
+          cmd: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+  register: Flannel_status
+
+- name: Flannel Network Status
+  debug:
+          msg: "Flanner Network Status => {{ Flannel_status.failed }}"  

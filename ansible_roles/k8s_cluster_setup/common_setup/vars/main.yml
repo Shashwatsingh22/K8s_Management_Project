@@ -1,0 +1,6 @@
+---
+# vars file for common_setup
+softwares:
+        - kubeadm
+        - kubelet
+        - kubectl  

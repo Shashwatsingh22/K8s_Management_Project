@@ -1,0 +1,15 @@
+- hosts: [tag_Name_master,tag_Name_slave]
+
+  roles:
+          - name: "Firstly Installing all the Requirment to both nodes"
+            role: "../common_setup"
+
+- hosts: tag_Name_master
+
+  roles:
+          - role: "../k8s_master"
+
+- hosts: tag_Name_slave
+  
+  roles:
+          - role: "../k8s_slave"  

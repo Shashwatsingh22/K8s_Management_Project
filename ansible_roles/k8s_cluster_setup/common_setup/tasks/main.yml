@@ -1,0 +1,118 @@
+---
+# tasks file for common_setup
+- name: "Configuring yum for the docker"
+  yum_repository:
+          name: docker
+          file: docker
+          description: Configure the Docker Community Edition repo
+          baseurl: https://download.docker.com/linux/centos/7/x86_64/stable/
+          gpgcheck: no
+  register: docker_yum_status
+
+
+- name: "Docker Yum Cofiguration"
+  debug:
+   msg: "is the Docker Yum Configured  -> {{  docker_yum_status.failed }}"
+
+- name: "Installing Docker ....."
+  package:
+     name: "docker-ce-18.09.1-3.el7.x86_64"
+     state: present
+  register: installation_status     
+
+- name: "Installation Status"
+  debug:
+          msg: "Docker Installation Code  -> {{ installation_status.rc }}"
+
+- name: "Starting the Docker Services"
+  service:
+          name: docker
+          state: started
+          enabled: yes
+  register: service_status
+
+- name: "Service Status"
+  debug:
+          msg: "Docker Service Code -> {{ service_status.state }}"
+
+# Configuring Yum for the kubernetes Repository
+- name: "configuring k8s Yum Repository"
+  yum_repository:
+          name: kubernetes
+          file: kubernetes
+          description: Configure the k8s repo
+          baseurl: https://packages.cloud.google.com/yum/repos/kubernetes-el7-$basearch
+          gpgcheck: yes
+          enabled: 1
+          repo_gpgcheck: 1
+          gpgkey: https://packages.cloud.google.com/yum/doc/yum-key.gpg https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
+          exclude:
+                  - kubelet
+                  - kubeadm
+                  - kubectl
+  register: repo_status
+
+- name: "k8s repo Status"
+  debug:
+          msg: "is k8s repo is configured ? => {{ repo_status.failed }}"
+
+# Stoping SELINUX security
+- name: disabling selinux security
+  selinux:
+          state: permissive
+          policy: targeted
+  register: selinux_status
+
+- name: "selinux status"
+  debug:
+          msg: "SeLinux Status => {{ selinux_status.failed }}"
+
+- name: "Running an Command for SELINUX"
+  shell: "sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config"
+  changed_when: false
+
+#Installing the required software for setup of k9s
+- name: "Installing kubeadm, kubectl, kubelet"
+  yum:
+          name: "{{ item }}"
+          state: present
+          disable_excludes: kubernetes
+  loop: "{{ softwares }}"
+
+#Starting and Enabling the kubelet
+- name: "Starting the Kubelet Service"
+  service:
+     name: kubelet
+     state: started
+     enabled: yes
+
+#Pulling the Images using kubeadm
+- name: "Pulling the docker images using kubeadm"
+  shell: "kubeadm config images pull"
+  changed_when: false
+
+#Changing the driver of docker from the cgroupfs to systemd
+- name: "Changing the driver in the docker"
+  copy:
+   content: |
+         {
+            "exec-opts": ["native.cgroupdriver=systemd"]
+         }
+   dest: /etc/docker/daemon.json
+  register: driver_change
+
+- name: "Driver Change Info"
+  debug:
+          msg: "is Docker Driver Changed ? -> {{ driver_change.failed }}"
+
+- name: "Restarting Docker"
+  service:
+          name: docker
+          state: restarted
+  when: driver_change.changed == true
+
+#Installing the iproute-tc software
+- name: "Installing iproute-tc"
+  package:
+          name: iproute-tc
+          state: present

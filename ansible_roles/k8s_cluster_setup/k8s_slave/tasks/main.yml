@@ -1,0 +1,19 @@
+---
+# tasks file for k8s_slave
+- name: "Setting bridge-nf-call-iptables & ip6tables to 1"
+  shell: | 
+       echo "1"  > /proc/sys/net/bridge/bridge-nf-call-iptables
+       echo "1"  > /proc/sys/net/bridge/bridge-nf-call-ip6tables
+  changed_when: false
+
+- name: "again restarting the system"
+  shell: "sysctl --system"  
+
+#Lets Join With Cluster Now
+- name: Retrive the Token
+  debug:
+          msg: "{{ hostvars['token_master']['token'] }}"
+  register: token
+
+- name: Lets Join
+  command: "{{ token.msg }}"  
