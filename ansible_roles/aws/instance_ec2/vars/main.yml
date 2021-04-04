@@ -3,7 +3,7 @@
 num: 1
 tag: "PUT_TAG_HERE"
 security_group_id: "PUT_SECURITY_GROUP_ID_HERE"
-image_id: "ami-08e0ca9924195beba"
+image_id: "ami-0a9d27a9f4f5c0efc"
 Instance_Type:  "t2.micro"
 keyName: "PUT_YOUR_KEYNAME"
 reg: "ap-south-1"
