@@ -78,7 +78,7 @@
     <div class="main">
       <h1>Delete</h1>
 
-        <input type="text" placeholder="Enter Tag Name...." >
+        <input id="tagName" type="text" placeholder="Enter Tag Name...." >
         <br><br>
 
         <button  onclick="podDelete()">
@@ -102,11 +102,12 @@
         // var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tag}&image_name=${imageName}`
             
         // GetAll function
-        function get_all(){
+        var count =0;
+        function podDelete(){
             var service = 'pod';
             var subService = 'delete';
             var tagName = document.getElementById('tagName').value;
-            var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}`;
+            var url = `http://13.232.160.12/cgi-bin/main.py?service=${service}&subser=${subService}&tag=${tagName}`;
 
             var content = document.createElement('p');
 
@@ -122,7 +123,7 @@
             .catch((error)=>{
                 console.log(error);
                 
-                var value = document.createTextNode(`->  ${error}`);
+                var value = document.createTextNode(`->  ${error} `);
                 content.appendChild(value);
 
                 var element = document.getElementById("divOperationMessage");
@@ -130,7 +131,6 @@
             })
         }
       </script>
-      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     
     </body>
 </html>

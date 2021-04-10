@@ -120,7 +120,7 @@
           // var tagName = document.getElementById('tagName').value;
           // var typeName = document.getElementById('typeName').value;
 
-          var url = `http://master_ip/cgi-bin/main.py?service=${service}&subser=${subService}`;
+          var url = `http://13.232.160.12/cgi-bin/main.py?service=${service}&subser=${subService}`;
           // console.log(url)
           // var service = 'pod';
           // var subService = 'launch';
@@ -131,7 +131,7 @@
 
           axios.get(url)
           .then((response)=>{
-              console.log(response)
+              console.log(response);
               var value = document.createTextNode(`->  ${response.data}`);
               content.appendChild(value);
 
