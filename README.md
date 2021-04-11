@@ -12,7 +12,6 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
 
 <img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/FlutterWork/assets/main.png" width="400" height="200"/>
 
-
 ## Configuration of Multi Node Cluster on Cloud:
 
 
@@ -54,9 +53,10 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
 
 We are using ANSIBLE for automation which is good for the configuration but not for provisioning but we know how to provision it with the help of ANSIBLE. 
 
-![1](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/ansible_1.gif)
+![ansible_use](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/ansible_1.gif)
 
-But In Next Verision we are going to use Terraform.
+But In Next Verision we are going to use Terraform (For Provisioning).
+<img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/Terraform.png" width="400" height="200"/>
      
 Now it will be the task of ANSIBLE to download the required software which we have already hosted on our cloud which will act as controller node so that we can manage manged node and do anything.
 
