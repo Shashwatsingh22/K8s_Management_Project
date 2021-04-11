@@ -4,9 +4,10 @@
   shell: |
         echo "1" > /proc/sys/net/bridge/bridge-nf-call-iptables
   changed_when: false        
-
+    
 # Initialing Master
 - name: "Initializing Master"
+  when: 
   shell: "kubeadm init --pod-network-cidr={{ cidr }} --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem --node-name=master"
   ignore_errors: yes
 
@@ -38,9 +39,20 @@
 
 #Adding the Flannel Overlay NetWork for the Communication
 # Adding the support of Flannel Network for Overlay Network
-- name: Adding Flannel Network
-  command:
-          cmd: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+- name: First Copy the flanney.yml file so that we can overwrite the Network according to the given NetWork
+  get_url:
+          url: https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+          dest: $HOME/kube_flannel.yml
+
+- name: Set network in the $HOME/kube-flannel.yml file
+  lineinfile:
+    path: $HOME/kube_flannel.yml
+    regexp: '\"Network\":*'
+    line: "      \"Network\": \"{{ cidr }}\","
+
+
+- name: lets apply the flannel now
+  command: kubectl apply -f $HOME/kube_flannel.yml  
   register: Flannel_status
 
 - name: Flannel Network Status
