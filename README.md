@@ -10,7 +10,7 @@
 # Master Cluseter 😍
 An Cluster Kubernetes Management project, which helps users to manage the backend part for the there application like setup cluster on cloud or own data center , manage the cluster  , and many services are provided here.
 
-<img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/FlutterWork/assets/main.png" width="200" height="200"/>
+<img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/FlutterWork/assets/main.png" width="400" height="200"/>
 
 
 ## Configuration of Multi Node Cluster on Cloud:
