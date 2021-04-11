@@ -7,26 +7,27 @@
 <img alt="GitHub forks" src="https://img.shields.io/github/forks/Shashwatsingh22/K8s_Management_Project?style=flat-square">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Shashwatsingh22/K8s_Management_Project?style=flat-square">
 
-# Master Cluseter
-An app manager project, which helps users to managae the backend part of their apps like managing pods,
- creating cluster and many services are provided here.
+# Master Cluseter 😍
+An Cluster Kubernetes Management project, which helps users to manage the backend part for the there application like setup cluster on cloud or own data center , manage the cluster  , and many services are provided here.
+
+
 
 ## Configuration of Multi Node Cluster on Cloud:
 
 - Multi Node Cluster:
 
         Multi Node Cluster is a relation between master and slave in which there are many slave which is
-         control by a single master. This will divide the work and will not put any burden on a single
-          pod which results in reducing of time complexity. 
+        control by a single master. This will divide the work and will not put any burden on a single
+        pod which results in reducing of time complexity. 
 
 - Why Configuration on Clouds:
 
-      We can configure it on any datacenter which will be controlled by us. So we use clouds services to
+       We can configure it on any datacenter which will be controlled by us. So we use clouds services to
        configure it.  After being configured , the user does not need to do anything, all is our 
-       business , we just want your details like access key, passwords or make an IAM user accounts on 
+       business , we just want your details like access key, passwords or give us permission by the IAM role on 
        the clouds and give us  that much of access so that we can create instance and use that 
        instance.  In this it will be that you just need to tell how many master will be there and how 
-       many slaves. In which we can create high availability architecture with the help of multi master 
+       many slaves? In which we can create high availability architecture with the help of multi master 
        structure  in which there can be many master as well as slave and if one master is down then we 
        will have another master .
 
@@ -35,23 +36,25 @@ An app manager project, which helps users to managae the backend part of their a
 
 1.Cluster on Same Cloud Plateform:
 
-    In this, user have to tell that how much maser and slave will be in order to build architecture on a
-     single platform like aws , google clouds, azure etc.
+    In this, user have to tell  platform  in order to build architecture on it
+    single platforms like google clouds, aws , azure etc.
                
  2.Cluster on Multi Cloud Plateform:
                    
     In today’s industry , everyone needs all the architecture in multicloud Cluster. As one slave is running on 
     their local datacenter , another on AWS or Google clouds  and all are running on some other clouds .
-     This is Multiclouds Architecture.
+    This is Multiclouds Architecture.
                          
 
 
 ## Tool used for automation:
 
     We are using ANSIBLE for automation which is good for the configuration but not for provisioning but
-     we know how to provision it with the help of ANSIBLE.
-    Now it will be the task of ANSIBLE to download the required software which we have already hosted on
-     our cloud which is a controller node so that we can manage user node and do anything.
+     we know how to provision it with the help of ANSIBLE. 
+     But In Next Verision we are going to use Terraform.
+     
+     Now it will be the task of ANSIBLE to download the required software which we have already hosted on
+     our cloud which will act as controller node so that we can manage manged node and do anything.
 
 
 - Kubernetes:
@@ -93,11 +96,9 @@ An app manager project, which helps users to managae the backend part of their a
         It will describe all things about the pods  after taking a label value
 
 
-##	Get Pods by label Value:
+- Get Pods by label Value:
                       
-                
-   
-     
+                     
            
 2.	Deployment
         
@@ -135,16 +136,20 @@ An app manager project, which helps users to managae the backend part of their a
 
 
 
-
-
-
 3.	Secret
+
 4.	Service
+
 5.	Namespace
+
 6.	Storage
+
 7.	Multi Container Pod
+
 8.	Cluster role
+
 9.	Demon Set
+
 10.	Package Manger (Helm) 
 
 
@@ -203,3 +208,18 @@ Image  Creater Docker:
     </td>
     </tr>
 </table>
+
+
+
+## Let us explain in deep that what we are using in the Master Cluster and why we are using it . 🤔
+
+So first of all , we are using automation tool in this project , in which you have to provide IAM credentials to us so that we can provide the cloud services.  On the basis of that credentials we configure your cloud to the cluster .Here we are working on Kubernetes cluster and we used Ansible as our configuration tool for automation.
+
+Let's discuss few points about ansible ...
+
+There are two nodes in the Ansible, one is the manage node and the other one  is the controller node. In this, we are taking the credentials from user as per there request of any cloud(like googke cloud , aws, azure )  and with the help of the ansible tool we are provisioning instance  and configuring  it and when the instance is being lunched  on the basis of number of master and we can cretae master of high availability architecture and we can add as many numbers of slave to Cluster .For Demo we lunched an single master and initially we launched 2 slaves then ansible configured the master as well as setup all the important softwares of  master and slave and manage all the Configuration files . To manage all the stuffs from our side  we provide some files in your master node so that you can access your master node directly through our application (website and app) in which there are some python files which hosted automatically after the server run. We are doing all this with the help of Ansible.
+
+And we will add multi cloud architecture in next version in which we ask you to where do you want to launch your master or slave and how many slave do you have and where do you want to launch per slave . If you want to make your master on google cloud then we will fetch all the details like to launch a instance we need a (peak) key  for security and all other things . 
+
+We have not yet made it user based. We are working through our default values and launching our instance through cloud .
+In next version we will implement the user mode and create our database through firstore which store all our data like some important credentials like name , username , password , email , iam role  creadentials .
