@@ -15,7 +15,6 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
 ## Configuration of Multi Node Cluster on Cloud:
 
 
-
 - Multi Node Cluster:
 
         Multi Node Cluster is a relation between master and slave in which there are many slave which is
@@ -46,7 +45,10 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
     In today’s industry , everyone needs all the architecture in multicloud Cluster. As one slave is running on 
     their local datacenter , another on AWS or Google clouds  and all are running on some other clouds .
     This is Multiclouds Architecture.
-                         
+
+🤔 Wants to Know More You Refers to this blog ! (Which will explain you How this complete setup is Done by Ansible ?) 
+📝https://bit.ly/3s9Reka
+
 ![cloud_plateforms](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/cloud_plateforms.png)
 
 ## Tool used for automation:
