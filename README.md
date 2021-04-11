@@ -48,7 +48,7 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
     their local datacenter , another on AWS or Google clouds  and all are running on some other clouds .
     This is Multiclouds Architecture.
                          
-
+![cloud_plateforms](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/cloud_plateforms.png)
 
 ## Tool used for automation:
 
