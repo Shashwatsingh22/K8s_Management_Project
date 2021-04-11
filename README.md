@@ -46,7 +46,7 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
     their local datacenter , another on AWS or Google clouds  and all are running on some other clouds .
     This is Multiclouds Architecture.
 
-🤔 Wants to Know More You Refers to this blog ! (Which will explain you How this complete setup is Done by Ansible ?) 
+🤔 Wants to Know More You Can Refer to this blog ! (Which will explain you How this complete setup is Done by Ansible ?) 
 📝https://bit.ly/3s9Reka
 
 ![cloud_plateforms](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/cloud_plateforms.png)
