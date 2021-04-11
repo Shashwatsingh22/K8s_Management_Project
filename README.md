@@ -49,9 +49,11 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
 
 ## Tool used for automation:
 
-    We are using ANSIBLE for automation which is good for the configuration but not for provisioning but
-     we know how to provision it with the help of ANSIBLE. 
-     But In Next Verision we are going to use Terraform.
+We are using ANSIBLE for automation which is good for the configuration but not for provisioning but we know how to provision it with the help of ANSIBLE. 
+
+![1](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/ansible_1.gif)
+
+But In Next Verision we are going to use Terraform.
      
      Now it will be the task of ANSIBLE to download the required software which we have already hosted on
      our cloud which will act as controller node so that we can manage manged node and do anything.
