@@ -60,8 +60,6 @@ But In Next Verision we are going to use Terraform.
      
 Now it will be the task of ANSIBLE to download the required software which we have already hosted on our cloud which will act as controller node so that we can manage manged node and do anything.
 
-![2](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/ansible_ec2.gif)
-
 
 - Kubernetes:
 
