@@ -55,8 +55,8 @@ We are using ANSIBLE for automation which is good for the configuration but not 
 
 ![ansible_use](https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/ansible_1.gif)
 
-But In Next Verision we are going to use Terraform (For Provisioning).
-<img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/Terraform.png" width="400" height="200"/>
+But In Next Verision we are going to use Terraform (For Provisioning).<br>
+<img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/images/Terraform.png" width="400" height="200"/><br>
      
 Now it will be the task of ANSIBLE to download the required software which we have already hosted on our cloud which will act as controller node so that we can manage manged node and do anything.
 
