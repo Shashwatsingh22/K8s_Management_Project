@@ -12,7 +12,7 @@ An Cluster Kubernetes Management project, which helps users to manage the backen
 
 <h3> Demo Video </h3> <br>
 
-[![Demo Video](https://i.ytimg.com/vi/6hO0Px_3h_w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAOSOMnSLzZwDMeFjP4ct7-NveTXw)](https://www.youtube.com/watch?v=6hO0Px_3h_w "Demo Of Project!!") <br>
+[![Demo Video](FlutterWork/assets/main.png =200x100)](https://www.youtube.com/watch?v=6hO0Px_3h_w "Demo Of Project!!") <br>
 
 
 
