@@ -10,7 +10,8 @@
 # Master Cluseter 😍
 An Cluster Kubernetes Management project, which helps users to manage the backend part for the there application like setup cluster on cloud or own data center , manage the cluster  , and many services are provided here.
 
---> Demo Video
+<h3> Demo Video </h3> <br>
+
 [![Demo Video](https://i.ytimg.com/vi/6hO0Px_3h_w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAOSOMnSLzZwDMeFjP4ct7-NveTXw)](https://www.youtube.com/watch?v=6hO0Px_3h_w "Demo Of Project!!") <br>
 
 
