@@ -8,10 +8,12 @@
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/Shashwatsingh22/K8s_Management_Project?style=flat-square">
 
 # Master Cluseter 😍
-[![Demo Video](https://i.ytimg.com/vi/6hO0Px_3h_w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAOSOMnSLzZwDMeFjP4ct7-NveTXw)](https://www.youtube.com/watch?v=6hO0Px_3h_w "Demo Of Project!!") <br>
 An Cluster Kubernetes Management project, which helps users to manage the backend part for the there application like setup cluster on cloud or own data center , manage the cluster  , and many services are provided here.
 
-<img src="https://raw.githubusercontent.com/Shashwatsingh22/K8s_Management_Project/main/FlutterWork/assets/main.png" width="400" height="200"/>
+--> Demo Video
+[![Demo Video](https://i.ytimg.com/vi/6hO0Px_3h_w/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAOSOMnSLzZwDMeFjP4ct7-NveTXw)](https://www.youtube.com/watch?v=6hO0Px_3h_w "Demo Of Project!!") <br>
+
+
 
 ## Configuration of Multi Node Cluster on Cloud:
 
